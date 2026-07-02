@@ -1,4 +1,4 @@
-const CACHE_NAME = 'guaite-del-gusto-v9';
+const CACHE_NAME = 'guaite-del-gusto-v10';
 
 const PRECACHE_URLS = [
   'index.html',
