@@ -147,9 +147,9 @@ body {
 .hero-photo {
   width: 100%;
   display: block;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
-  object-position: 70% 30%;
+  object-position: 45% 92%;
   border-radius: 60px 0 0 60px;
   box-shadow: -10px 16px 36px rgba(90,31,27,0.22);
 }
@@ -673,6 +673,13 @@ body { padding-bottom: 80px; }
 
 .book-btn.tel { background: var(--maroon-soft); }
 .book-btn.ext { background: var(--maroon); }
+
+a.book-btn span {
+  color: #fff;
+  opacity: 1;
+  font-size: inherit;
+  font-weight: inherit;
+}
 
 /* ── DIRECTIONS BUTTON (venue cards) ── */
 .venue-directions {
