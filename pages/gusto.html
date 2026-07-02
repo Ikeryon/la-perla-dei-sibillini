@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#5A1F1B">
+  <title>Gusto — Le Guaite del Gusto</title>
+  <meta name="description" content="Ristoranti, botteghe, produttori e ospitalità: tutti i luoghi da vivere a Visso durante Le Guaite del Gusto.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:title" content="Il gusto — Le Guaite del Gusto">
+  <meta property="og:description" content="Ristoranti, botteghe, produttori e ospitalità: tutti i luoghi da vivere a Visso durante Le Guaite del Gusto.">
+  <meta property="og:image" content="../images/hero.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+  <link rel="manifest" href="../manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <header class="topbar">
+    <div class="lang-switch">
+      <span class="active" onclick="setLang('it')">IT</span>
+      <span onclick="setLang('en')">EN</span>
+    </div>
+    <div class="logo-block">
+      <img src="../images/logo-visso.png" alt="Comune di Visso" class="logo-crest">
+      <span class="logo-text serif">La perla dei Sibillini</span>
+    </div>
+  </header>
+
+  <!-- INSTALL BANNER -->
+  <div class="install-banner" id="installBanner">
+    <div class="install-icon">⬇</div>
+    <div class="install-text">
+      <strong data-it="Visso sempre in tasca" data-en="Visso always with you">Visso sempre in tasca</strong>
+      <span data-it="Salva l'app sulla Home" data-en="Save the app to your Home">Salva l'app sulla Home</span>
+    </div>
+    <button onclick="installApp()" data-it="Installa" data-en="Install">Installa</button>
+  </div>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <a href="../index.html" class="back-link" data-it="← Home" data-en="← Home">← Home</a>
+    <h1 class="serif"><span data-it="Il" data-en="The">Il</span> <em data-it="gusto" data-en="flavour">gusto</em></h1>
+    <p class="section-sub" data-it="Ristoranti, botteghe, produttori e ospitalità: tutti i luoghi da vivere a Visso" data-en="Restaurants, shops, producers and places to stay: every spot to experience in Visso">Ristoranti, botteghe, produttori e ospitalità: tutti i luoghi da vivere a Visso</p>
+  </div>
+
+  <section class="section" style="padding-top: 8px;">
+
+    <div class="filter-chips">
+      <button class="filter-chip active" data-filter="all" data-it="Tutti" data-en="All">Tutti</button>
+      <button class="filter-chip" data-filter="ristoranti" data-it="Ristoranti" data-en="Restaurants">Ristoranti</button>
+      <button class="filter-chip" data-filter="botteghe" data-it="Botteghe" data-en="Shops">Botteghe</button>
+      <button class="filter-chip" data-filter="acquacolture" data-it="Acquacolture" data-en="Fish farms">Acquacolture</button>
+      <button class="filter-chip" data-filter="dispensa" data-it="Dispensa" data-en="Pantry">Dispensa</button>
+      <button class="filter-chip" data-filter="ospitalita" data-it="Ospitalità" data-en="Where to stay">Ospitalità</button>
+      <button class="filter-chip" data-filter="esperienze" data-it="Esperienze" data-en="Experiences">Esperienze</button>
+    </div>
+
+    <!-- RISTORANTI / PUNTI DEL GUSTO -->
+    <div class="filter-group" data-category="ristoranti">
+      <h2 class="subsection-title serif" data-it="Punti del gusto" data-en="Flavour spots">Punti del gusto</h2>
+      <p class="subsection-intro" data-it="Ristoranti, bar, gelaterie ed empori dove vivere il territorio attraverso piatti, assaggi e abbinamenti speciali pensati per Le Guaite del Gusto." data-en="Restaurants, bars, gelaterias and delis where you can experience the territory through special dishes, tastings and pairings created for Le Guaite del Gusto.">Ristoranti, bar, gelaterie ed empori dove vivere il territorio attraverso piatti, assaggi e abbinamenti speciali pensati per Le Guaite del Gusto.</p>
+
+      <div class="venue-card">
+        <div class="venue-name">Eno Emporio del Gusto</div>
+        <div class="venue-desc" data-it="Degustazione di vini regionali di nicchia, in abbinamento ai legumi del territorio." data-en="Tasting of niche regional wines, paired with local legumes.">Degustazione di vini regionali di nicchia, in abbinamento ai legumi del territorio.</div>
+        <a class="venue-directions" href="https://www.google.com/maps/dir/?api=1&destination=Eno+Emporio+del+Gusto+Visso" target="_blank" rel="noopener">📍 <span data-it="Portami qui" data-en="Take me there">Portami qui</span></a>
+      </div>
+
+      <div class="venue-card">
+        <div class="venue-name">Bar Gelateria Montebovi</div>
+        <div class="venue-place">Visso</div>
+        <div class="venue-desc" data-it="Speciale cremolata di ricotta dei Sibillini in occasione di Le Guaite del Gusto." data-en="Special Sibillini ricotta cremolata for Le Guaite del Gusto.">Speciale cremolata di ricotta dei Sibillini in occasione di Le Guaite del Gusto.</div>
+        <a class="venue-directions" href="https://www.google.com/maps/dir/?api=1&destination=Bar+Gelateria+Montebovi+Visso" target="_blank" rel="noopener">📍 <span data-it="Portami qui" data-en="Take me there">Portami qui</span></a>
+      </div>
+
+      <div class="venue-card">
+        <div class="venue-name">Osteria Fario</div>
+        <div class="venue-place">Visso</div>
+        <div class="venue-desc" data-it="Abbinamenti contemporanei per una cucina che valorizza i profumi autentici di pascoli, monti e fiumi." data-en="Contemporary pairings for a cuisine that celebrates the authentic scents of pastures, mountains and rivers.">Abbinamenti contemporanei per una cucina che valorizza i profumi autentici di pascoli, monti e fiumi.</div>
+        <a class="venue-directions" href="https://www.google.com/maps/dir/?api=1&destination=Osteria+Fario+Visso" target="_blank" rel="noopener">📍 <span data-it="Portami qui" data-en="Take me there">Portami qui</span></a>
+      </div>
+
+      <div class="venue-card">
+        <div class="venue-name">La Filanda</div>
+        <div class="venue-place">Visso</div>
+        <div class="venue-desc" data-it="Cucina di confine e accoglienza di montagna per un'insegna iconica di Visso." data-en="Border cuisine and mountain hospitality from one of Visso's iconic addresses.">Cucina di confine e accoglienza di montagna per un'insegna iconica di Visso.</div>
+        <a class="venue-directions" href="https://www.google.com/maps/dir/?api=1&destination=La+Filanda+Visso" target="_blank" rel="noopener">📍 <span data-it="Portami qui" data-en="Take me there">Portami qui</span></a>
+      </div>
+
+      <div class="venue-card">
+        <div class="venue-name">Il Laghetto</div>
+        <div class="venue-place">Visso</div>
+        <div class="venue-desc" data-it="Il verde dei giardini del lago, il luogo ideale per gustare una pinsa in un'atmosfera rilassata." data-en="The greenery of the lake gardens, the ideal spot to enjoy a pinsa in a relaxed atmosphere.">Il verde dei giardini del lago, il luogo ideale per gustare una pinsa in un'atmosfera rilassata.</div>
+        <a class="venue-directions" href="https://www.google.com/maps/dir/?api=1&destination=Il+Laghetto+ristorante+Visso" target="_blank" rel="noopener">📍 <span data-it="Portami qui" data-en="Take me there">Portami qui</span></a>
+      </div>
+
+      <div class="venue-card">
+        <div class="venue-name">Wanted</div>
+        <div class="venue-place">Visso</div>
+        <div class="venue-desc" data-it="Un menu in continua evoluzione, attento alla freschezza delle materie prime, con proposte dedicate anche alla selvaggina di montagna." data-en="An ever-evolving menu focused on fresh ingredients, with dishes dedicated to mountain game too.">Un menu in continua evoluzione, attento alla freschezza delle materie prime, con proposte dedicate anche alla selvaggina di montagna.</div>
+        <a class="venue-directions" href="https://www.google.com/maps/dir/?api=1&destination=Wanted+ristorante+Visso" target="_blank" rel="noopener">📍 <span data-it="Portami qui" data-en="Take me there">Portami qui</span></a>
+      </div>
+
+      <div class="venue-card">
+        <div class="venue-name">Trattoria del Pescatore</div>
+        <div class="venue-place">Visso</div>
+        <div class="venue-desc" data-it="Da tre generazioni, il gusto della semplicità tra profumi di brace, trota e pasta fatta fresca." data-en="For three generations, the taste of simplicity amid the scents of charcoal grill, trout and fresh pasta.">Da tre generazioni, il gusto della semplicità tra profumi di brace, trota e pasta fatta fresca.</div>
+        <a class="venue-directions" href="https://www.google.com/maps/dir/?api=1&destination=Trattoria+del+Pescatore+Visso" target="_blank" rel="noopener">📍 <span data-it="Portami qui" data-en="Take me there">Portami qui</span></a>
+      </div>
+
+      <div class="venue-card">
+        <div class="venue-name">Dal Navigante</div>
+        <div class="venue-place">Castelsantangelo sul Nera</div>
+        <div class="venue-desc" data-it="Dal 1982, un punto di riferimento per la cucina marchigiana genuina, tartufo e carne alla brace." data-en="Since 1982, a landmark for genuine Marche cuisine, truffle and charcoal-grilled meat.">Dal 1982, un punto di riferimento per la cucina marchigiana genuina, tartufo e carne alla brace.</div>
+        <a class="venue-directions" href="https://www.google.com/maps/dir/?api=1&destination=Dal+Navigante+Castelsantangelo+sul+Nera" target="_blank" rel="noopener">📍 <span data-it="Portami qui" data-en="Take me there">Portami qui</span></a>
+      </div>
+    </div>
+
+    <!-- BOTTEGHE -->
+    <div class="filter-group" data-category="botteghe">
+      <h2 class="subsection-title serif" data-it="Botteghe" data-en="Shops">Botteghe</h2>
+      <p class="subsection-intro" data-it="Un itinerario tra botteghe, produzioni artigianali e specialità locali per conoscere Visso attraverso i suoi sapori: ricette di famiglia, salumi, formaggi, dolci della tradizione, vini eroici e prodotti identitari dei Sibillini." data-en="A journey through shops, artisan production and local specialties to discover Visso through its flavours: family recipes, cured meats, cheeses, traditional sweets, heroic wines and Sibillini's signature products.">Un itinerario tra botteghe, produzioni artigianali e specialità locali per conoscere Visso attraverso i suoi sapori: ricette di famiglia, salumi, formaggi, dolci della tradizione, vini eroici e prodotti identitari dei Sibillini.</p>
+
+      <div class="venue-card">
+        <div class="venue-name">L'Ortolano dei Sibillini</div>
+        <div class="venue-desc" data-it="Una mescitanza unica, espressione autentica dei sapori dell'orto e della montagna." data-en="A unique blend, an authentic expression of the flavours of the vegetable garden and the mountain.">Una mescitanza unica, espressione autentica dei sapori dell'orto e della montagna.</div>
+        <a class="venue-directions" href="https://www.google.com/maps/dir/?api=1&destination=L%27Ortolano+dei+Sibillini+Visso" target="_blank" rel="noopener">📍 <span data-it="Portami qui" data-en="Take me there">Portami qui</span></a>
+      </div>
+
+      <div class="venue-card">
+        <div class="venue-name">Macelleria-Norcineria Calabrò</div>
+        <div class="venue-desc" data-it="Salumi e specialità di pecora, nel segno della tradizione norcina dell'Appennino." data-en="Cured meats and lamb specialties, in the sign of the Apennine norcineria tradition.">Salumi e specialità di pecora, nel segno della tradizione norcina dell'Appennino.</div>
+        <a class="venue-directions" href="https://www.google.com/maps/dir/?api=1&destination=Macelleria+Norcineria+Calabro+Visso" target="_blank" rel="noopener">📍 <span data-it="Portami qui" data-en="Take me there">Portami qui</span></a>
+      </div>
+
+      <div class="venue-card">
+        <div class="venue-name">Caffè Sibilla dal 1967</div>
+        <div class="venue-place">Visso</div>
+        <div class="venue-desc" data-it="Produzione dell'iconica Torta Paolo da Visso, dolce simbolo della casa, e della Crostata del Pastore con ingredienti dei Sibillini; grandi lievitati tra cui il Panzuppo, disponibile tutto l'anno." data-en="Home of the iconic Torta Paolo da Visso, the house's signature cake, and the Crostata del Pastore made with Sibillini ingredients; large leavened cakes including the Panzuppo, available year-round.">Produzione dell'iconica Torta Paolo da Visso, dolce simbolo della casa, e della Crostata del Pastore con ingredienti dei Sibillini; grandi lievitati tra cui il Panzuppo, disponibile tutto l'anno.</div>
+        <a class="venue-directions" href="https://www.google.com/maps/dir/?api=1&destination=Caffe+Sibilla+dal+1967+Visso" target="_blank" rel="noopener">📍 <span data-it="Portami qui" data-en="Take me there">Portami qui</span></a>
+      </div>
+
+      <div class="venue-card">
+        <div class="venue-name">Coppacchioli-Tattini</div>
+        <div class="venue-place">Visso</div>
+        <div class="venue-desc" data-it="Vini eroici, espressione di territorio, altitudine e passione." data-en="Heroic wines, an expression of terroir, altitude and passion.">Vini eroici, espressione di territorio, altitudine e passione.</div>
+        <a class="venue-directions" href="https://www.google.com/maps/dir/?api=1&destination=Coppacchioli+Tattini+Visso" target="_blank" rel="noopener">📍 <span data-it="Portami qui" data-en="Take me there">Portami qui</span></a>
+      </div>
+
+      <div class="venue-card">
+        <div class="venue-name">Vissana Salumi</div>
+        <div class="venue-place">Visso</div>
+        <div class="venue-desc" data-it="Produzione di Ciauscolo IGP e specialità della tradizione salumiera marchigiana." data-en="Producer of Ciauscolo IGP and specialties of the Marche cured-meat tradition.">Produzione di Ciauscolo IGP e specialità della tradizione salumiera marchigiana.</div>
+        <a class="venue-directions" href="https://www.google.com/maps/dir/?api=1&destination=Vissana+Salumi+Visso" target="_blank" rel="noopener">📍 <span data-it="Portami qui" data-en="Take me there">Portami qui</span></a>
+      </div>
+
+      <div class="venue-card">
+        <div class="venue-name">Pasticceria Vissana</div>
+        <div class="venue-place">Visso</div>
+        <div class="venue-desc" data-it="Torta di ricotta e visciola, tra dolcezza, territorio e memoria." data-en="Ricotta and sour cherry cake, between sweetness, terroir and memory.">Torta di ricotta e visciola, tra dolcezza, territorio e memoria.</div>
+        <a class="venue-directions" href="https://www.google.com/maps/dir/?api=1&destination=Pasticceria+Vissana+Visso" target="_blank" rel="noopener">📍 <span data-it="Portami qui" data-en="Take me there">Portami qui</span></a>
+      </div>
+
+      <div class="venue-card">
+        <div class="venue-name">Salumificio Cappa</div>
+        <div class="venue-place">Visso</div>
+        <div class="venue-desc" data-it="Salumi tipici e specialità norcine." data-en="Traditional cured meats and norcineria specialties.">Salumi tipici e specialità norcine.</div>
+        <a class="venue-directions" href="https://www.google.com/maps/dir/?api=1&destination=Salumificio+Cappa+Visso" target="_blank" rel="noopener">📍 <span data-it="Portami qui" data-en="Take me there">Portami qui</span></a>
+      </div>
+
+      <div class="venue-card">
+        <div class="venue-name">Forno Cappa</div>
+        <div class="venue-place">Visso</div>
+        <div class="venue-desc" data-it="Dolci da forno e torta di ricotta, prodotti semplici e autentici della tradizione." data-en="Baked sweets and ricotta cake, simple and authentic traditional products.">Dolci da forno e torta di ricotta, prodotti semplici e autentici della tradizione.</div>
+        <a class="venue-directions" href="https://www.google.com/maps/dir/?api=1&destination=Forno+Cappa+Visso" target="_blank" rel="noopener">📍 <span data-it="Portami qui" data-en="Take me there">Portami qui</span></a>
+      </div>
+
+      <div class="venue-card">
+        <div class="venue-name">Il Pastorello di Cupi</div>
+        <div class="venue-desc" data-it="Formaggio di pecora «Re del Caseificio», eccellenza casearia dei Sibillini." data-en="Sheep's cheese «Re del Caseificio», a dairy excellence of the Sibillini.">Formaggio di pecora «Re del Caseificio», eccellenza casearia dei Sibillini.</div>
+        <a class="venue-directions" href="https://www.google.com/maps/dir/?api=1&destination=Il+Pastorello+Cupi+Visso" target="_blank" rel="noopener">📍 <span data-it="Portami qui" data-en="Take me there">Portami qui</span></a>
+      </div>
+
+      <div class="venue-card">
+        <div class="venue-name">Pettacci Salumi</div>
+        <div class="venue-desc" data-it="Scopri il gusto del salume morbido «C'era una volta», ideale con pane caldo o pecorino semistagionato." data-en="Discover the soft cured meat «C'era una volta», perfect with warm bread or semi-aged pecorino.">Scopri il gusto del salume morbido «C'era una volta», ideale con pane caldo o pecorino semistagionato.</div>
+        <a class="venue-directions" href="https://www.google.com/maps/dir/?api=1&destination=Pettacci+Salumi" target="_blank" rel="noopener">📍 <span data-it="Portami qui" data-en="Take me there">Portami qui</span></a>
+      </div>
+
+      <div class="venue-card">
+        <div class="venue-name">Ortigiana</div>
+        <div class="venue-place">Ussita</div>
+        <div class="venue-desc" data-it="Prodotti naturali a base di iperico e melissa, ispirati alle erbe e al benessere dei Sibillini." data-en="Natural products based on St. John's wort and lemon balm, inspired by the herbs and wellbeing of the Sibillini.">Prodotti naturali a base di iperico e melissa, ispirati alle erbe e al benessere dei Sibillini.</div>
+        <a class="venue-directions" href="https://www.google.com/maps/dir/?api=1&destination=Ortigiana+Ussita" target="_blank" rel="noopener">📍 <span data-it="Portami qui" data-en="Take me there">Portami qui</span></a>
+      </div>
+
+      <div class="venue-card">
+        <div class="venue-name">Azienda Agricola Sapori dei Sibillini di Luca Testa</div>
+        <div class="venue-desc" data-it="Legumi e cereali del territorio." data-en="Local legumes and grains.">Legumi e cereali del territorio.</div>
+        <a class="venue-directions" href="https://www.google.com/maps/dir/?api=1&destination=Azienda+Agricola+Sapori+dei+Sibillini+Luca+Testa+Visso" target="_blank" rel="noopener">📍 <span data-it="Portami qui" data-en="Take me there">Portami qui</span></a>
+      </div>
+    </div>
+
+    <!-- ACQUACOLTURE APERTE -->
+    <div class="filter-group" data-category="acquacolture">
+      <h2 class="subsection-title serif" data-it="Acquacolture aperte" data-en="Open fish farms">Acquacolture aperte</h2>
+      <p class="subsection-intro" data-it="Luoghi identitari della montagna vissana, dove l'acqua diventa risorsa, paesaggio e cultura produttiva. Un'occasione per avvicinarsi al mondo della trota e scoprire una filiera profondamente legata al territorio." data-en="Landmark places of the Visso mountains, where water becomes resource, landscape and production culture. A chance to get close to the world of trout and discover a supply chain deeply tied to the land.">Luoghi identitari della montagna vissana, dove l'acqua diventa risorsa, paesaggio e cultura produttiva. Un'occasione per avvicinarsi al mondo della trota e scoprire una filiera profondamente legata al territorio.</p>
+
+      <div class="venue-card">
+        <div class="venue-name">Troticoltura Eredi Cherubini di Biagi Giuseppe</div>
+        <div class="venue-place">Visso</div>
+        <div class="venue-desc" data-it="Aperta alle visite." data-en="Open for visits.">Aperta alle visite.</div>
+        <a class="venue-directions" href="https://www.google.com/maps/dir/?api=1&destination=Troticoltura+Eredi+Cherubini+Visso" target="_blank" rel="noopener">📍 <span data-it="Portami qui" data-en="Take me there">Portami qui</span></a>
+      </div>
+
+      <div class="venue-card">
+        <div class="venue-name">Mariano Cappa</div>
+        <div class="venue-place">Visso</div>
+        <div class="venue-desc" data-it="Visita delle peschiere e due chiacchiere su Agri-fish. Sabato e domenica ore 17:00, in collaborazione con UNICAM." data-en="Visit to the fish ponds and a chat about Agri-fish. Saturday and Sunday at 5pm, in collaboration with UNICAM.">Visita delle peschiere e due chiacchiere su Agri-fish. Sabato e domenica ore 17:00, in collaborazione con UNICAM.</div>
+        <div class="venue-meta" data-it="Gratuito, prenotazione obbligatoria allo 0737685623" data-en="Free, booking required on 0737685623">Gratuito, prenotazione obbligatoria allo 0737685623</div>
+        <a class="venue-directions" href="https://www.google.com/maps/dir/?api=1&destination=Mariano+Cappa+Agri-fish+Visso" target="_blank" rel="noopener">📍 <span data-it="Portami qui" data-en="Take me there">Portami qui</span></a>
+        <a class="book-btn tel" href="tel:+390737685623">📞 <span data-it="Chiama per prenotare" data-en="Call to book">Chiama per prenotare</span></a>
+      </div>
+    </div>
+
+    <!-- LA DISPENSA DELLA MONTAGNA -->
+    <div class="filter-group" data-category="dispensa">
+      <h2 class="subsection-title serif" data-it="La dispensa della montagna" data-en="The mountain's pantry">La dispensa della montagna</h2>
+      <p class="subsection-intro" data-it="Due elementi semplici e identitari raccontano il legame profondo tra territorio, natura e cucina quotidiana: l'acqua che nasce dai Sibillini e i legumi che custodiscono il gusto autentico delle terre alte." data-en="Two simple, identity-defining elements tell the deep bond between territory, nature and everyday cooking: the water born from the Sibillini and the legumes that hold the authentic taste of the high lands.">Due elementi semplici e identitari raccontano il legame profondo tra territorio, natura e cucina quotidiana: l'acqua che nasce dai Sibillini e i legumi che custodiscono il gusto autentico delle terre alte.</p>
+
+      <div class="venue-card">
+        <div class="venue-name">Acqua Nerea</div>
+        <div class="venue-place">Castelsantangelo sul Nera</div>
+        <div class="venue-desc" data-it="La purezza dei Sibillini in un'acqua che nasce nel cuore della montagna." data-en="The purity of the Sibillini in a water born in the heart of the mountain.">La purezza dei Sibillini in un'acqua che nasce nel cuore della montagna.</div>
+        <a class="venue-directions" href="https://www.google.com/maps/dir/?api=1&destination=Acqua+Nerea+Castelsantangelo+sul+Nera" target="_blank" rel="noopener">📍 <span data-it="Portami qui" data-en="Take me there">Portami qui</span></a>
+      </div>
+
+      <div class="venue-card">
+        <div class="venue-name">Sapori dei Sibillini</div>
+        <div class="venue-place">Visso</div>
+        <div class="venue-desc" data-it="Lenticchie e legumi del territorio, simbolo della cucina semplice e autentica di montagna." data-en="Local lentils and legumes, symbol of simple, authentic mountain cooking.">Lenticchie e legumi del territorio, simbolo della cucina semplice e autentica di montagna.</div>
+        <a class="venue-directions" href="https://www.google.com/maps/dir/?api=1&destination=Sapori+dei+Sibillini+Visso" target="_blank" rel="noopener">📍 <span data-it="Portami qui" data-en="Take me there">Portami qui</span></a>
+      </div>
+    </div>
+
+    <!-- OSPITALITÀ DI MONTAGNA -->
+    <div class="filter-group" data-category="ospitalita">
+      <h2 class="subsection-title serif" data-it="Ospitalità di montagna" data-en="Mountain hospitality">Ospitalità di montagna</h2>
+      <p class="subsection-intro" data-it="Strutture accoglienti dove il soggiorno diventa parte dell'esperienza, a partire dalla colazione: un primo incontro con i sapori locali, le ricette di casa e l'atmosfera dei Sibillini." data-en="Welcoming places where the stay becomes part of the experience, starting with breakfast: a first encounter with local flavours, home recipes and the atmosphere of the Sibillini.">Strutture accoglienti dove il soggiorno diventa parte dell'esperienza, a partire dalla colazione: un primo incontro con i sapori locali, le ricette di casa e l'atmosfera dei Sibillini.</p>
+
+      <div class="venue-card">
+        <div class="venue-name">Villacolle</div>
+        <div class="venue-place">Visso</div>
+        <div class="venue-desc" data-it="In occasione di Le Guaite del Gusto, una colazione speciale con prodotti tipici locali per iniziare la giornata con i sapori autentici del territorio." data-en="For Le Guaite del Gusto, a special breakfast with local specialties to start the day with the authentic flavours of the territory.">In occasione di Le Guaite del Gusto, una colazione speciale con prodotti tipici locali per iniziare la giornata con i sapori autentici del territorio.</div>
+        <a class="venue-directions" href="https://www.google.com/maps/dir/?api=1&destination=Villacolle+Visso" target="_blank" rel="noopener">📍 <span data-it="Portami qui" data-en="Take me there">Portami qui</span></a>
+      </div>
+
+      <div class="venue-card">
+        <div class="venue-name">B&B Il Borgo</div>
+        <div class="venue-place">Visso</div>
+        <div class="venue-desc" data-it="A colazione con i sapori ritrovati della tradizione." data-en="Breakfast with the rediscovered flavours of tradition.">A colazione con i sapori ritrovati della tradizione.</div>
+        <a class="venue-directions" href="https://www.google.com/maps/dir/?api=1&destination=B%26B+Il+Borgo+Visso" target="_blank" rel="noopener">📍 <span data-it="Portami qui" data-en="Take me there">Portami qui</span></a>
+      </div>
+
+      <div class="venue-card">
+        <div class="venue-name">Sibilla Ospitalità</div>
+        <div class="venue-place">Visso</div>
+        <div class="venue-desc" data-it="All'alba con i sapori della Sibilla: una colazione ispirata alla montagna e al territorio." data-en="At dawn with the flavours of the Sibilla: a breakfast inspired by the mountain and the territory.">All'alba con i sapori della Sibilla: una colazione ispirata alla montagna e al territorio.</div>
+        <a class="venue-directions" href="https://www.google.com/maps/dir/?api=1&destination=Sibilla+Ospitalita+Visso" target="_blank" rel="noopener">📍 <span data-it="Portami qui" data-en="Take me there">Portami qui</span></a>
+      </div>
+    </div>
+
+    <!-- ESPERIENZE -->
+    <div class="filter-group" data-category="esperienze">
+      <h2 class="subsection-title serif" data-it="Esperienze" data-en="Experiences">Esperienze</h2>
+      <p class="subsection-intro" data-it="Visite, animali, produzioni, contatto con il territorio." data-en="Visits, animals, production, contact with the land.">Visite, animali, produzioni, contatto con il territorio.</p>
+
+      <div class="venue-card">
+        <div class="venue-name">La Sopravissana dei Sibillini</div>
+        <div class="venue-place">Ussita</div>
+        <div class="venue-desc" data-it="Allevamento dedicato alla tutela della pecora Sopravissana, razza autoctona dei Sibillini, e alla valorizzazione della sua lana attraverso una filiera identitaria di montagna." data-en="A farm dedicated to protecting the Sopravissana sheep, a native Sibillini breed, and to promoting its wool through an identity-driven mountain supply chain.">Allevamento dedicato alla tutela della pecora Sopravissana, razza autoctona dei Sibillini, e alla valorizzazione della sua lana attraverso una filiera identitaria di montagna.</div>
+        <div class="venue-meta" data-it="Visite ed esperienze in azienda su prenotazione" data-en="On-farm visits and experiences by appointment">Visite ed esperienze in azienda su prenotazione</div>
+        <a class="venue-directions" href="https://www.google.com/maps/dir/?api=1&destination=La+Sopravissana+dei+Sibillini+Ussita" target="_blank" rel="noopener">📍 <span data-it="Portami qui" data-en="Take me there">Portami qui</span></a>
+      </div>
+
+      <div class="venue-card">
+        <div class="venue-name">L'Incanto degli Appennini</div>
+        <div class="venue-place">Ussita</div>
+        <div class="venue-desc" data-it="Cosmesi naturale a base di latte di capra, nata nel cuore dei Sibillini dal legame con gli animali e con la montagna. L'azienda propone anche momenti di incontro e attività esperienziali con gli animali." data-en="Natural goat's-milk cosmetics, born in the heart of the Sibillini from a bond with animals and the mountain. The farm also offers encounters and hands-on activities with the animals.">Cosmesi naturale a base di latte di capra, nata nel cuore dei Sibillini dal legame con gli animali e con la montagna. L'azienda propone anche momenti di incontro e attività esperienziali con gli animali.</div>
+        <div class="venue-meta" data-it="Su prenotazione" data-en="By appointment">Su prenotazione</div>
+        <a class="venue-directions" href="https://www.google.com/maps/dir/?api=1&destination=L%27Incanto+degli+Appennini+Ussita" target="_blank" rel="noopener">📍 <span data-it="Portami qui" data-en="Take me there">Portami qui</span></a>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- BOTTOM NAV -->
+  <nav class="bottom-nav">
+    <a href="../index.html" class="nav-item">
+      <span class="nav-icon">⌂</span>
+      <span data-it="Home" data-en="Home">Home</span>
+    </a>
+    <a href="programma.html" class="nav-item">
+      <span class="nav-icon">📅</span>
+      <span data-it="Programma" data-en="Schedule">Programma</span>
+    </a>
+    <a href="gusto.html" class="nav-item active">
+      <span class="nav-icon">🍽</span>
+      <span data-it="Gusto" data-en="Food">Gusto</span>
+    </a>
+    <a href="mappa.html" class="nav-item">
+      <span class="nav-icon">📍</span>
+      <span data-it="Mappa" data-en="Map">Mappa</span>
+    </a>
+    <a href="tavolozza.html" class="nav-item">
+      <span class="nav-icon">🎨</span>
+      <span data-it="Tavolozza" data-en="Flavours">Tavolozza</span>
+    </a>
+  </nav>
+
+  <script src="../js/main.js"></script>
+  <script>
+    document.querySelectorAll('.filter-chip').forEach(chip => {
+      chip.addEventListener('click', () => {
+        document.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
+        chip.classList.add('active');
+        const filter = chip.dataset.filter;
+        document.querySelectorAll('.filter-group').forEach(group => {
+          group.style.display = (filter === 'all' || group.dataset.category === filter) ? '' : 'none';
+        });
+      });
+    });
+  </script>
+</body>
+</html>

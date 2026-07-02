@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#5A1F1B">
+  <title>Programma — Le Guaite del Gusto</title>
+  <meta name="description" content="Il programma completo di Le Guaite del Gusto a Visso: eventi, orari e prenotazioni dal 17 al 19 luglio.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:title" content="Programma — Le Guaite del Gusto">
+  <meta property="og:description" content="Il programma completo di Le Guaite del Gusto a Visso: eventi, orari e prenotazioni dal 17 al 19 luglio.">
+  <meta property="og:image" content="../images/hero.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+  <link rel="manifest" href="../manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <header class="topbar">
+    <div class="lang-switch">
+      <span class="active" onclick="setLang('it')">IT</span>
+      <span onclick="setLang('en')">EN</span>
+    </div>
+    <div class="logo-block">
+      <img src="../images/logo-visso.png" alt="Comune di Visso" class="logo-crest">
+      <span class="logo-text serif">La perla dei Sibillini</span>
+    </div>
+  </header>
+
+  <!-- INSTALL BANNER -->
+  <div class="install-banner" id="installBanner">
+    <div class="install-icon">⬇</div>
+    <div class="install-text">
+      <strong data-it="Visso sempre in tasca" data-en="Visso always with you">Visso sempre in tasca</strong>
+      <span data-it="Salva l'app sulla Home" data-en="Save the app to your Home">Salva l'app sulla Home</span>
+    </div>
+    <button onclick="installApp()" data-it="Installa" data-en="Install">Installa</button>
+  </div>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <a href="../index.html" class="back-link" data-it="← Home" data-en="← Home">← Home</a>
+    <h1 class="serif"><span data-it="Il" data-en="The">Il</span> <em data-it="programma" data-en="programme">programma</em></h1>
+    <p class="section-sub" data-it="17 – 19 luglio · Visso, tre giorni da vivere" data-en="17 – 19 July · Visso, three days to experience">17 – 19 luglio · Visso, tre giorni da vivere</p>
+  </div>
+
+  <section class="section" style="padding-top: 8px;">
+
+    <!-- VENERDÌ -->
+    <div class="day-card">
+      <div class="day-label">Venerdì 17 luglio</div>
+      <div class="day-title serif" data-it="L'aperitivo che apre tutto" data-en="The aperitivo that kicks it all off">L'aperitivo che apre tutto</div>
+
+      <div class="event-row">
+        <span class="event-time">19.00</span>
+        <div class="event-text">
+          <strong>AperiTrota</strong>
+          <span data-it="Presso Troticoltura Cherubini, Valle di Castelsantangelo" data-en="At Troticoltura Cherubini, Valle di Castelsantangelo" class="event-desc">Presso Troticoltura Cherubini, Valle di Castelsantangelo</span>
+          <span class="event-meta" data-it="Costo del kit degustazione: € 20 · Prenotazioni 333.6515374 (Anna)" data-en="Tasting kit cost: € 20 · Bookings 333.6515374 (Anna)">Costo del kit degustazione: € 20 · Prenotazioni 333.6515374 (Anna)</span>
+          <a class="book-btn" href="https://wa.me/393336515374?text=Ciao%20Anna%2C%20vorrei%20partecipare%20all'aperitrota" target="_blank" rel="noopener">💬 <span data-it="Prenota ora" data-en="Book now">Prenota ora</span></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SABATO -->
+    <div class="day-card">
+      <div class="day-label">Sabato 18 luglio</div>
+      <div class="day-title serif" data-it="Natura, arte e piazza" data-en="Nature, art and the piazza">Natura, arte e piazza</div>
+
+      <div class="event-row">
+        <span class="event-time">15.30</span>
+        <div class="event-text">
+          <strong data-it="Trekking Natura con aperitivo di tipicità locali" data-en="Nature trek with a local specialties aperitivo">Trekking Natura con aperitivo di tipicità locali</strong>
+          <span class="event-desc" data-it="Percorso tra i panorami del Monte Fema e di Pian della Cuna, costeggiando la Riserva del Torricchio, con aperitivo al rifugio di Croce. Ritrovo presso Fematre (fraz. Visso)." data-en="A route through the views of Monte Fema and Pian della Cuna, alongside the Torricchio Reserve, with an aperitivo at the Croce refuge. Meeting point at Fematre (Visso hamlet).">Percorso tra i panorami del Monte Fema e di Pian della Cuna, costeggiando la Riserva del Torricchio, con aperitivo al rifugio di Croce. Ritrovo presso Fematre (fraz. Visso).</span>
+          <span class="event-meta" data-it="Costo € 20 · Prenotazioni 331.2595840 (Corrado)" data-en="Cost € 20 · Bookings 331.2595840 (Corrado)">Costo € 20 · Prenotazioni 331.2595840 (Corrado)</span>
+          <a class="book-btn" href="https://wa.me/393312595840?text=Ciao%20Corrado%2C%20vorrei%20partecipare%20al%20trekking" target="_blank" rel="noopener">💬 <span data-it="Prenota ora" data-en="Book now">Prenota ora</span></a>
+        </div>
+      </div>
+
+      <div class="event-row">
+        <span class="event-time">16.00</span>
+        <div class="event-text">
+          <strong data-it="Inaugurazione sala immersiva" data-en="Immersive room inauguration">Inaugurazione sala immersiva</strong>
+          <span class="event-desc" data-it="Piazza Maria Cappa" data-en="Piazza Maria Cappa">Piazza Maria Cappa</span>
+        </div>
+      </div>
+
+      <div class="event-row">
+        <span class="event-time">17.30</span>
+        <div class="event-text">
+          <strong data-it="Esplora Visso" data-en="Explore Visso">Esplora Visso</strong>
+          <span class="event-desc" data-it="Visita guidata del centro storico. Ritrovo presso Porta Santa Maria, a cura di Visso d'Arte." data-en="Guided tour of the historic centre. Meeting point at Porta Santa Maria, hosted by Visso d'Arte.">Visita guidata del centro storico. Ritrovo presso Porta Santa Maria, a cura di Visso d'Arte.</span>
+          <span class="event-meta" data-it="Gratuito, prenotazione obbligatoria allo 0737.685623" data-en="Free, booking required on 0737.685623">Gratuito, prenotazione obbligatoria allo 0737.685623</span>
+          <a class="book-btn tel" href="tel:+390737685623">📞 <span data-it="Chiama per prenotare" data-en="Call to book">Chiama per prenotare</span></a>
+        </div>
+      </div>
+
+      <div class="event-row">
+        <span class="event-time">17.30</span>
+        <div class="event-text">
+          <strong data-it="Hapa Zome — Laboratorio di stampa vegetale" data-en="Hapa Zome — Plant printing workshop">Hapa Zome — Laboratorio di stampa vegetale</strong>
+          <span class="event-desc" data-it="Per bambini e adulti. Scopri l'antica tecnica giapponese che trasforma fiori e foglie in opere d'arte. Presso Giardini del Lago (laghetto di Visso), a cura di Amanuartes per EVO Macerata." data-en="For children and adults. Discover the ancient Japanese technique that turns flowers and leaves into artworks. At Giardini del Lago (Visso's small lake), hosted by Amanuartes for EVO Macerata.">Per bambini e adulti. Scopri l'antica tecnica giapponese che trasforma fiori e foglie in opere d'arte. Presso Giardini del Lago (laghetto di Visso), a cura di Amanuartes per EVO Macerata.</span>
+        </div>
+      </div>
+
+      <div class="event-row">
+        <span class="event-time">18.30</span>
+        <div class="event-text">
+          <strong data-it="Orizzonte Futuro nella Perla dei Sibillini" data-en="Future Horizon in the Pearl of the Sibillini">Orizzonte Futuro nella Perla dei Sibillini</strong>
+          <span class="event-desc" data-it="Performance artistica e interattiva di improvvisazione, a cura di ETRA – Accademia delle arti sceniche vive con la Compagnia della Muta. Coreografie di Alba Maestrelli, direzione artistica di Maria Sole Colognori. A seguire mini-laboratorio artistico per bambini. Presso Giardini del Lago." data-en="An interactive improvisation art performance, by ETRA – Accademia delle arti sceniche vive with Compagnia della Muta. Choreography by Alba Maestrelli, artistic direction by Maria Sole Colognori. Followed by a mini art workshop for children. At Giardini del Lago.">Performance artistica e interattiva di improvvisazione, a cura di ETRA – Accademia delle arti sceniche vive con la Compagnia della Muta. Coreografie di Alba Maestrelli, direzione artistica di Maria Sole Colognori. A seguire mini-laboratorio artistico per bambini. Presso Giardini del Lago.</span>
+        </div>
+      </div>
+
+      <div class="event-row">
+        <span class="event-time">18.30</span>
+        <div class="event-text">
+          <strong data-it="Ritorno in Piazza — Aperitivo" data-en="Ritorno in Piazza — Aperitivo">Ritorno in Piazza — Aperitivo</strong>
+          <span class="event-desc" data-it="Piazza Martiri Vissani torna a vivere con un aperitivo che celebra la montagna tra tradizione e creatività: finger food con ciauscolo, legumi di montagna, salmerino affumicato, trota marinata, pecorino, tartufo, miele, erbe e fiori edibili. A cura dell'Accademia di Tipicità, con Osteria Fario, Ristorante La Filanda e Associazione Torneo delle Guaite." data-en="Piazza Martiri Vissani comes back to life with an aperitivo celebrating the mountain between tradition and creativity: finger food with ciauscolo, mountain legumes, smoked char, marinated trout, pecorino, truffle, honey, edible herbs and flowers. Hosted by Accademia di Tipicità, with Osteria Fario, Ristorante La Filanda and Associazione Torneo delle Guaite.">Piazza Martiri Vissani torna a vivere con un aperitivo che celebra la montagna tra tradizione e creatività: finger food con ciauscolo, legumi di montagna, salmerino affumicato, trota marinata, pecorino, tartufo, miele, erbe e fiori edibili. A cura dell'Accademia di Tipicità, con Osteria Fario, Ristorante La Filanda e Associazione Torneo delle Guaite.</span>
+        </div>
+      </div>
+
+      <div class="event-row">
+        <span class="event-time">20.30</span>
+        <div class="event-text">
+          <strong data-it="A cena con le cordelle" data-en="Dinner with cordelle">A cena con le cordelle</strong>
+          <span class="event-desc" data-it="Cena a cura della Pro Loco con le tradizionali cordelle, ma anche cinghiale e piatti simbolo della montagna. Presso Piazza Maria Cappa." data-en="Dinner by the Pro Loco with traditional cordelle pasta, plus wild boar and other mountain classics. At Piazza Maria Cappa.">Cena a cura della Pro Loco con le tradizionali cordelle, ma anche cinghiale e piatti simbolo della montagna. Presso Piazza Maria Cappa.</span>
+          <span class="event-meta" data-it="€ 30 antipasto, primo, secondo con contorno o dolce, bevande incluse · Info e prenotazioni 328.7540219 (Pamela)" data-en="€ 30 starter, first course, main with side or dessert, drinks included · Info and bookings 328.7540219 (Pamela)">€ 30 antipasto, primo, secondo con contorno o dolce, bevande incluse · Info e prenotazioni 328.7540219 (Pamela)</span>
+          <a class="book-btn" href="https://wa.me/393287540219?text=Ciao%20Pamela%2C%20vorrei%20partecipare%20alla%20cena%20con%20le%20cordelle" target="_blank" rel="noopener">💬 <span data-it="Prenota ora" data-en="Book now">Prenota ora</span></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- DOMENICA -->
+    <div class="day-card">
+      <div class="day-label">Domenica 19 luglio</div>
+      <div class="day-title serif" data-it="Mercato, gusto e spettacolo" data-en="Market, flavour and show">Mercato, gusto e spettacolo</div>
+
+      <div class="event-row">
+        <span class="event-time">9.00</span>
+        <div class="event-text">
+          <strong>Visso Bike Tour</strong>
+          <span class="event-desc" data-it="A cura di Bike Hospitality" data-en="Hosted by Bike Hospitality">A cura di Bike Hospitality</span>
+          <span class="event-meta" data-it="Info e prenotazioni al 329.6750413" data-en="Info and bookings on 329.6750413">Info e prenotazioni al 329.6750413</span>
+          <a class="book-btn" href="https://wa.me/393296750413?text=Vorrei%20partecipare%20al%20Visso%20Bike%20Tour" target="_blank" rel="noopener">💬 <span data-it="Prenota ora" data-en="Book now">Prenota ora</span></a>
+        </div>
+      </div>
+
+      <div class="event-row">
+        <span class="event-time">9.30</span>
+        <div class="event-text">
+          <strong data-it="Bagno nei Sibillini" data-en="Forest bathing in the Sibillini">Bagno nei Sibillini</strong>
+          <span class="event-desc" data-it="Forest bathing con la guida naturalistico-ambientale-escursionistica Barbara Migliorelli." data-en="Forest bathing with naturalistic-environmental hiking guide Barbara Migliorelli.">Forest bathing con la guida naturalistico-ambientale-escursionistica Barbara Migliorelli.</span>
+          <span class="event-meta" data-it="Gratuito, prenotazione obbligatoria al 338.3905190" data-en="Free, booking required on 338.3905190">Gratuito, prenotazione obbligatoria al 338.3905190</span>
+          <a class="book-btn" href="https://wa.me/393383905190?text=Ciao%20Barbara%2C%20vorrei%20partecipare%20al%20bagno%20nei%20Sibillini" target="_blank" rel="noopener">💬 <span data-it="Prenota ora" data-en="Book now">Prenota ora</span></a>
+        </div>
+      </div>
+
+      <div class="event-row">
+        <span class="event-time">10.00 – 20.00</span>
+        <div class="event-text">
+          <strong data-it="Mercatino di montagna" data-en="Mountain market">Mercatino di montagna</strong>
+          <span class="event-desc" data-it="Perle di artigianato & tipicità: una piazza che si anima di sapori, saperi e produzioni di eccellenza, per degustare, acquistare e conoscere prodotti tipici e creazioni originali. In collaborazione con Confartigianato MC-FM-AP." data-en="Pearls of craft & local specialties: a piazza alive with flavours, know-how and excellent produce to taste, buy and discover. In collaboration with Confartigianato MC-FM-AP.">Perle di artigianato & tipicità: una piazza che si anima di sapori, saperi e produzioni di eccellenza, per degustare, acquistare e conoscere prodotti tipici e creazioni originali. In collaborazione con Confartigianato MC-FM-AP.</span>
+        </div>
+      </div>
+
+      <div class="event-row">
+        <span class="event-time">17.00</span>
+        <div class="event-text">
+          <strong data-it="Laboratori di Manualità" data-en="Handicraft workshops">Laboratori di Manualità</strong>
+          <span class="event-desc" data-it="Uncinetto, ferri e ricamo a punto maglia, a cura del progetto Uniamoci." data-en="Crochet, knitting needles and embroidery, hosted by the Uniamoci project.">Uncinetto, ferri e ricamo a punto maglia, a cura del progetto Uniamoci.</span>
+        </div>
+      </div>
+
+      <div class="event-row">
+        <span class="event-time">17.30</span>
+        <div class="event-text">
+          <strong data-it="Le Guaite del Gusto: lo spettacolo dei Sibillini" data-en="Le Guaite del Gusto: the Sibillini show">Le Guaite del Gusto: lo spettacolo dei Sibillini</strong>
+          <span class="event-desc" data-it="Talk show, racconti, dimostrazioni e incontri per celebrare sapori, saperi e gesti della montagna. Con la tavolozza dei sapori vissani, a cura dell'Accademia di Tipicità, e le dimostrazioni live degli artigiani, la piazza di Visso diventa palcoscenico di gusto, manualità e materia. Conducono Monica Caradonna e Francesco Gasparri di Linea Verde RAI. Presso Piazza Maria Cappa." data-en="Talk show, stories, demonstrations and encounters celebrating the flavours, know-how and gestures of the mountain. With the palette of Visso flavours, hosted by Accademia di Tipicità, and live artisan demonstrations, Visso's piazza becomes a stage for flavour, craft and material. Hosted by Monica Caradonna and Francesco Gasparri of Linea Verde RAI. At Piazza Maria Cappa.">Talk show, racconti, dimostrazioni e incontri per celebrare sapori, saperi e gesti della montagna. Con la tavolozza dei sapori vissani, a cura dell'Accademia di Tipicità, e le dimostrazioni live degli artigiani, la piazza di Visso diventa palcoscenico di gusto, manualità e materia. Conducono Monica Caradonna e Francesco Gasparri di Linea Verde RAI. Presso Piazza Maria Cappa.</span>
+          <span class="event-meta" data-it="€ 20, prenotazioni su tipicita.it" data-en="€ 20, bookings on tipicita.it">€ 20, prenotazioni su tipicita.it</span>
+          <a class="book-btn ext" href="https://www.tipicita.it" target="_blank" rel="noopener">🎟️ <span data-it="Prenota su tipicita.it" data-en="Book on tipicita.it">Prenota su tipicita.it</span></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout" data-it="A cura dell'Accademia di Tipicità, in collaborazione con Osteria Fario, Ristorante La Filanda e Associazione Torneo delle Guaite." data-en="Hosted by Accademia di Tipicità, in collaboration with Osteria Fario, Ristorante La Filanda and Associazione Torneo delle Guaite.">A cura dell'Accademia di Tipicità, in collaborazione con Osteria Fario, Ristorante La Filanda e Associazione Torneo delle Guaite.</div>
+
+  </section>
+
+  <!-- BOTTOM NAV -->
+  <nav class="bottom-nav">
+    <a href="../index.html" class="nav-item">
+      <span class="nav-icon">⌂</span>
+      <span data-it="Home" data-en="Home">Home</span>
+    </a>
+    <a href="programma.html" class="nav-item active">
+      <span class="nav-icon">📅</span>
+      <span data-it="Programma" data-en="Schedule">Programma</span>
+    </a>
+    <a href="gusto.html" class="nav-item">
+      <span class="nav-icon">🍽</span>
+      <span data-it="Gusto" data-en="Food">Gusto</span>
+    </a>
+    <a href="mappa.html" class="nav-item">
+      <span class="nav-icon">📍</span>
+      <span data-it="Mappa" data-en="Map">Mappa</span>
+    </a>
+    <a href="tavolozza.html" class="nav-item">
+      <span class="nav-icon">🎨</span>
+      <span data-it="Tavolozza" data-en="Flavours">Tavolozza</span>
+    </a>
+  </nav>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

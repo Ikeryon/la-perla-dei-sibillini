@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#5A1F1B">
+  <title>Le Guaite del Gusto — La Perla dei Sibillini</title>
+  <meta name="description" content="17–19 luglio a Visso: tre giorni tra degustazioni, esperienze e atmosfere dei Sibillini. Scopri il programma, i punti del gusto e la mappa del borgo.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:title" content="Le Guaite del Gusto — La Perla dei Sibillini">
+  <meta property="og:description" content="17–19 luglio a Visso: tre giorni tra degustazioni, esperienze e atmosfere dei Sibillini.">
+  <meta property="og:image" content="images/hero.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <header class="topbar">
+    <div class="lang-switch">
+      <span class="active" onclick="setLang('it')">IT</span>
+      <span onclick="setLang('en')">EN</span>
+    </div>
+    <div class="logo-block">
+      <img src="images/logo-visso.png" alt="Comune di Visso" class="logo-crest">
+      <span class="logo-text serif">La perla dei Sibillini</span>
+    </div>
+  </header>
+
+  <!-- INSTALL BANNER -->
+  <div class="install-banner" id="installBanner">
+    <div class="install-icon">⬇</div>
+    <div class="install-text">
+      <strong data-it="Visso sempre in tasca" data-en="Visso always with you">Visso sempre in tasca</strong>
+      <span data-it="Salva l'app sulla Home" data-en="Save the app to your Home">Salva l'app sulla Home</span>
+    </div>
+    <button onclick="installApp()" data-it="Installa" data-en="Install">Installa</button>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <img class="hero-swirl" src="images/g-swirl.png" alt="">
+    <img class="grand-tour-badge" src="images/grand-tour-badge.png" alt="Grand Tour delle Marche · Tappa Ufficiale">
+    <div class="hero-content">
+      <p class="hero-dates">17 – 18 – 19 LUGLIO · VISSO</p>
+      <p class="hero-presents" data-it="La perla dei Sibillini presenta" data-en="La perla dei Sibillini presents">La perla dei Sibillini presenta</p>
+      <h1 class="hero-logotype-wrap">
+        <img class="hero-logotype" src="images/logotype.png" alt="Le guaite del gusto">
+      </h1>
+      <p class="hero-sub" data-it="Tre giorni per vivere il borgo tra esperienze, degustazioni e atmosfere tutte da scoprire." data-en="Three days to discover the village through experiences, tastings and unique atmospheres.">
+        Tre giorni per vivere il borgo tra esperienze, degustazioni e atmosfere tutte da scoprire.
+      </p>
+    </div>
+    <div class="hero-photo-wrap">
+      <img class="hero-photo" src="images/hero.png" alt="Visso vista attraverso una sfera di cristallo">
+    </div>
+  </section>
+
+  <!-- CTA ROW -->
+  <nav class="cta-row">
+    <a href="pages/programma.html" class="cta-btn primary" data-it="📅 Programma" data-en="📅 Schedule">📅 Programma</a>
+    <a href="pages/gusto.html" class="cta-btn" data-it="🍽️ Gusto" data-en="🍽️ Food">🍽️ Gusto</a>
+    <a href="pages/mappa.html" class="cta-btn" data-it="📍 Mappa" data-en="📍 Map">📍 Mappa</a>
+    <a href="pages/tavolozza.html" class="cta-btn" data-it="🎨 Tavolozza" data-en="🎨 Flavours">🎨 Tavolozza</a>
+  </nav>
+
+  <!-- PROGRAMMA PREVIEW -->
+  <section class="section">
+    <h2 class="serif"><span data-it="Il programma" data-en="The programme">Il programma</span></h2>
+    <p class="section-sub" data-it="Tre giorni, un'agenda da vivere" data-en="Three days, an agenda to experience">Tre giorni, un'agenda da vivere</p>
+
+    <div class="day-card">
+      <div class="day-label">Venerdì 17 luglio</div>
+      <div class="day-title serif">L'aperitivo che apre tutto</div>
+      <div class="event-row">
+        <span class="event-time">19.00</span>
+        <div class="event-text">
+          <strong>AperiTrota</strong>
+          <span>Troticoltura Cherubini, Valle di Castel Sant'Angelo · € 20</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="day-card">
+      <div class="day-label">Sabato 18 luglio</div>
+      <div class="day-title serif">Natura, arte e piazza</div>
+      <div class="event-row">
+        <span class="event-time">15.30</span>
+        <div class="event-text">
+          <strong>Trekking Natura</strong>
+          <span>Monte Fema e Pian della Cuna, aperitivo al rifugio · € 20</span>
+        </div>
+      </div>
+      <div class="event-row">
+        <span class="event-time">18.30</span>
+        <div class="event-text">
+          <strong>Ritorno in Piazza</strong>
+          <span>Aperitivo con finger food dei Sibillini, Piazza Martiri Vissani</span>
+        </div>
+      </div>
+      <div class="event-row">
+        <span class="event-time">20.30</span>
+        <div class="event-text">
+          <strong>A cena con le cordelle</strong>
+          <span>Piazza Maria Cappa · € 30</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="day-card">
+      <div class="day-label">Domenica 19 luglio</div>
+      <div class="day-title serif">Mercato, gusto e spettacolo</div>
+      <div class="event-row">
+        <span class="event-time">9.00</span>
+        <div class="event-text">
+          <strong>Visso Bike Tour</strong>
+          <span>A cura di Bike Hospitality</span>
+        </div>
+      </div>
+      <div class="event-row">
+        <span class="event-time">10.00</span>
+        <div class="event-text">
+          <strong>Mercatino di montagna</strong>
+          <span>Artigianato, tipicità, laboratori · fino alle 20.00</span>
+        </div>
+      </div>
+      <div class="event-row">
+        <span class="event-time">17.30</span>
+        <div class="event-text">
+          <strong>Le Guaite del Gusto</strong>
+          <span>Talk show con Monica Caradonna, Piazza Maria Cappa</span>
+        </div>
+      </div>
+    </div>
+
+    <a href="pages/programma.html" class="see-all" data-it="Vedi tutto il programma →" data-en="See full programme →">Vedi tutto il programma →</a>
+  </section>
+
+  <!-- TAVOLOZZA BLOCK -->
+  <section class="section">
+    <div class="tavolozza-block">
+      <h3 class="serif" data-it="La tavolozza dei sapori vissani" data-en="The palette of Visso flavours">La tavolozza dei sapori vissani</h3>
+      <p data-it="Legumi, miele, tartufo, trota, salumi e formaggi: un percorso che racconta Visso attraverso terra, acqua, pascoli e boschi." data-en="Legumes, honey, truffle, trout, cured meats and cheeses: a journey through Visso's land, water, pastures and woods.">
+        Legumi, miele, tartufo, trota, salumi e formaggi: un percorso che racconta Visso attraverso terra, acqua, pascoli e boschi.
+      </p>
+      <div class="tav-grid">
+        <div class="tav-item"><span class="tav-icon">🌿</span><span data-it="Legumi" data-en="Legumes">Legumi</span></div>
+        <div class="tav-item"><span class="tav-icon">🍯</span><span data-it="Miele" data-en="Honey">Miele</span></div>
+        <div class="tav-item"><span class="tav-icon">🍄</span><span data-it="Tartufo" data-en="Truffle">Tartufo</span></div>
+        <div class="tav-item"><span class="tav-icon">🐟</span><span data-it="Trota" data-en="Trout">Trota</span></div>
+        <div class="tav-item"><span class="tav-icon">🥩</span><span data-it="Salumi" data-en="Cured Meats">Salumi</span></div>
+        <div class="tav-item"><span class="tav-icon">🧀</span><span data-it="Formaggi" data-en="Cheeses">Formaggi</span></div>
+      </div>
+      <a href="pages/tavolozza.html" class="tav-link" data-it="Scopri la tavolozza →" data-en="Discover the palette →">Scopri la tavolozza →</a>
+    </div>
+  </section>
+
+  <!-- BOTTOM NAV -->
+  <nav class="bottom-nav">
+    <a href="index.html" class="nav-item active">
+      <span class="nav-icon">⌂</span>
+      <span data-it="Home" data-en="Home">Home</span>
+    </a>
+    <a href="pages/programma.html" class="nav-item">
+      <span class="nav-icon">📅</span>
+      <span data-it="Programma" data-en="Schedule">Programma</span>
+    </a>
+    <a href="pages/gusto.html" class="nav-item">
+      <span class="nav-icon">🍽</span>
+      <span data-it="Gusto" data-en="Food">Gusto</span>
+    </a>
+    <a href="pages/mappa.html" class="nav-item">
+      <span class="nav-icon">📍</span>
+      <span data-it="Mappa" data-en="Map">Mappa</span>
+    </a>
+    <a href="pages/tavolozza.html" class="nav-item">
+      <span class="nav-icon">🎨</span>
+      <span data-it="Tavolozza" data-en="Flavours">Tavolozza</span>
+    </a>
+  </nav>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

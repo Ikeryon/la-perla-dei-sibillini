@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#5A1F1B">
+  <title>Mappa — Le Guaite del Gusto</title>
+  <meta name="description" content="Tutti i luoghi de Le Guaite del Gusto a Visso su mappa, con indicazioni stradali dirette.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:title" content="La mappa — Le Guaite del Gusto">
+  <meta property="og:description" content="Tutti i luoghi de Le Guaite del Gusto a Visso su mappa, con indicazioni stradali dirette.">
+  <meta property="og:image" content="../images/hero.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+  <link rel="manifest" href="../manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <header class="topbar">
+    <div class="lang-switch">
+      <span class="active" onclick="setLang('it')">IT</span>
+      <span onclick="setLang('en')">EN</span>
+    </div>
+    <div class="logo-block">
+      <img src="../images/logo-visso.png" alt="Comune di Visso" class="logo-crest">
+      <span class="logo-text serif">La perla dei Sibillini</span>
+    </div>
+  </header>
+
+  <!-- INSTALL BANNER -->
+  <div class="install-banner" id="installBanner">
+    <div class="install-icon">⬇</div>
+    <div class="install-text">
+      <strong data-it="Visso sempre in tasca" data-en="Visso always with you">Visso sempre in tasca</strong>
+      <span data-it="Salva l'app sulla Home" data-en="Save the app to your Home">Salva l'app sulla Home</span>
+    </div>
+    <button onclick="installApp()" data-it="Installa" data-en="Install">Installa</button>
+  </div>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <a href="../index.html" class="back-link" data-it="← Home" data-en="← Home">← Home</a>
+    <h1 class="serif"><span data-it="La" data-en="The">La</span> <em data-it="mappa" data-en="map">mappa</em></h1>
+    <p class="section-sub" data-it="Tutti i luoghi de Le Guaite del Gusto, tocca per aprire in maps" data-en="All the places of Le Guaite del Gusto, tap to open in maps">Tutti i luoghi de Le Guaite del Gusto, tocca per aprire in maps</p>
+  </div>
+
+  <section class="section" style="padding-top: 8px;">
+
+    <div class="map-embed">
+      <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=13.045%2C42.905%2C13.135%2C42.960&layer=mapnik&marker=42.9312%2C13.0885" loading="lazy" title="Visso"></iframe>
+    </div>
+    <a class="see-all" style="margin-top: 10px;" href="https://www.google.com/maps/search/?api=1&query=Visso+MC" target="_blank" rel="noopener" data-it="Apri in Google Maps →" data-en="Open in Google Maps →">Apri in Google Maps →</a>
+
+    <!-- PIAZZE E LUOGHI DELL'EVENTO -->
+    <div class="map-cat-title" data-it="Piazze e luoghi dell'evento" data-en="Squares and event venues">Piazze e luoghi dell'evento</div>
+
+    <a class="map-item" href="https://www.google.com/maps/search/?api=1&query=Piazza+Maria+Cappa+Visso" target="_blank" rel="noopener">
+      <div class="map-item-text"><span class="map-item-name">Piazza Maria Cappa</span><span class="map-item-place">Visso</span></div>
+      <span class="map-item-arrow">↗</span>
+    </a>
+    <a class="map-item" href="https://www.google.com/maps/search/?api=1&query=Piazza+Martiri+Vissani+Visso" target="_blank" rel="noopener">
+      <div class="map-item-text"><span class="map-item-name">Piazza Martiri Vissani</span><span class="map-item-place">Visso</span></div>
+      <span class="map-item-arrow">↗</span>
+    </a>
+    <a class="map-item" href="https://www.google.com/maps/search/?api=1&query=Giardini+del+Lago+Visso" target="_blank" rel="noopener">
+      <div class="map-item-text"><span class="map-item-name" data-it="Giardini del Lago (laghetto)" data-en="Giardini del Lago (lake)">Giardini del Lago (laghetto)</span><span class="map-item-place">Visso</span></div>
+      <span class="map-item-arrow">↗</span>
+    </a>
+    <a class="map-item" href="https://www.google.com/maps/search/?api=1&query=Porta+Santa+Maria+Visso" target="_blank" rel="noopener">
+      <div class="map-item-text"><span class="map-item-name">Porta Santa Maria</span><span class="map-item-place">Visso</span></div>
+      <span class="map-item-arrow">↗</span>
+    </a>
+    <a class="map-item" href="https://www.google.com/maps/search/?api=1&query=Fematre+Visso" target="_blank" rel="noopener">
+      <div class="map-item-text"><span class="map-item-name">Fematre</span><span class="map-item-place" data-it="Frazione di Visso" data-en="Hamlet of Visso">Frazione di Visso</span></div>
+      <span class="map-item-arrow">↗</span>
+    </a>
+
+    <!-- PUNTI DEL GUSTO -->
+    <div class="map-cat-title" data-it="Punti del gusto" data-en="Flavour spots">Punti del gusto</div>
+
+    <a class="map-item" href="https://www.google.com/maps/search/?api=1&query=Eno+Emporio+del+Gusto+Visso" target="_blank" rel="noopener">
+      <div class="map-item-text"><span class="map-item-name">Eno Emporio del Gusto</span><span class="map-item-place">Visso</span></div>
+      <span class="map-item-arrow">↗</span>
+    </a>
+    <a class="map-item" href="https://www.google.com/maps/search/?api=1&query=Bar+Gelateria+Montebovi+Visso" target="_blank" rel="noopener">
+      <div class="map-item-text"><span class="map-item-name">Bar Gelateria Montebovi</span><span class="map-item-place">Visso</span></div>
+      <span class="map-item-arrow">↗</span>
+    </a>
+    <a class="map-item" href="https://www.google.com/maps/search/?api=1&query=Osteria+Fario+Visso" target="_blank" rel="noopener">
+      <div class="map-item-text"><span class="map-item-name">Osteria Fario</span><span class="map-item-place">Visso</span></div>
+      <span class="map-item-arrow">↗</span>
+    </a>
+    <a class="map-item" href="https://www.google.com/maps/search/?api=1&query=La+Filanda+Visso" target="_blank" rel="noopener">
+      <div class="map-item-text"><span class="map-item-name">La Filanda</span><span class="map-item-place">Visso</span></div>
+      <span class="map-item-arrow">↗</span>
+    </a>
+    <a class="map-item" href="https://www.google.com/maps/search/?api=1&query=Il+Laghetto+ristorante+Visso" target="_blank" rel="noopener">
+      <div class="map-item-text"><span class="map-item-name">Il Laghetto</span><span class="map-item-place">Visso</span></div>
+      <span class="map-item-arrow">↗</span>
+    </a>
+    <a class="map-item" href="https://www.google.com/maps/search/?api=1&query=Wanted+ristorante+Visso" target="_blank" rel="noopener">
+      <div class="map-item-text"><span class="map-item-name">Wanted</span><span class="map-item-place">Visso</span></div>
+      <span class="map-item-arrow">↗</span>
+    </a>
+    <a class="map-item" href="https://www.google.com/maps/search/?api=1&query=Trattoria+del+Pescatore+Visso" target="_blank" rel="noopener">
+      <div class="map-item-text"><span class="map-item-name">Trattoria del Pescatore</span><span class="map-item-place">Visso</span></div>
+      <span class="map-item-arrow">↗</span>
+    </a>
+    <a class="map-item" href="https://www.google.com/maps/search/?api=1&query=Dal+Navigante+Castelsantangelo+sul+Nera" target="_blank" rel="noopener">
+      <div class="map-item-text"><span class="map-item-name">Dal Navigante</span><span class="map-item-place">Castelsantangelo sul Nera</span></div>
+      <span class="map-item-arrow">↗</span>
+    </a>
+
+    <!-- BOTTEGHE -->
+    <div class="map-cat-title" data-it="Botteghe" data-en="Shops">Botteghe</div>
+
+    <a class="map-item" href="https://www.google.com/maps/search/?api=1&query=L%27Ortolano+dei+Sibillini+Visso" target="_blank" rel="noopener">
+      <div class="map-item-text"><span class="map-item-name">L'Ortolano dei Sibillini</span><span class="map-item-place">Visso</span></div>
+      <span class="map-item-arrow">↗</span>
+    </a>
+    <a class="map-item" href="https://www.google.com/maps/search/?api=1&query=Macelleria+Norcineria+Calabro+Visso" target="_blank" rel="noopener">
+      <div class="map-item-text"><span class="map-item-name">Macelleria-Norcineria Calabrò</span><span class="map-item-place">Visso</span></div>
+      <span class="map-item-arrow">↗</span>
+    </a>
+    <a class="map-item" href="https://www.google.com/maps/search/?api=1&query=Caffe+Sibilla+dal+1967+Visso" target="_blank" rel="noopener">
+      <div class="map-item-text"><span class="map-item-name">Caffè Sibilla dal 1967</span><span class="map-item-place">Visso</span></div>
+      <span class="map-item-arrow">↗</span>
+    </a>
+    <a class="map-item" href="https://www.google.com/maps/search/?api=1&query=Coppacchioli+Tattini+Visso" target="_blank" rel="noopener">
+      <div class="map-item-text"><span class="map-item-name">Coppacchioli-Tattini</span><span class="map-item-place">Visso</span></div>
+      <span class="map-item-arrow">↗</span>
+    </a>
+    <a class="map-item" href="https://www.google.com/maps/search/?api=1&query=Vissana+Salumi+Visso" target="_blank" rel="noopener">
+      <div class="map-item-text"><span class="map-item-name">Vissana Salumi</span><span class="map-item-place">Visso</span></div>
+      <span class="map-item-arrow">↗</span>
+    </a>
+    <a class="map-item" href="https://www.google.com/maps/search/?api=1&query=Pasticceria+Vissana+Visso" target="_blank" rel="noopener">
+      <div class="map-item-text"><span class="map-item-name">Pasticceria Vissana</span><span class="map-item-place">Visso</span></div>
+      <span class="map-item-arrow">↗</span>
+    </a>
+    <a class="map-item" href="https://www.google.com/maps/search/?api=1&query=Salumificio+Cappa+Visso" target="_blank" rel="noopener">
+      <div class="map-item-text"><span class="map-item-name">Salumificio Cappa</span><span class="map-item-place">Visso</span></div>
+      <span class="map-item-arrow">↗</span>
+    </a>
+    <a class="map-item" href="https://www.google.com/maps/search/?api=1&query=Forno+Cappa+Visso" target="_blank" rel="noopener">
+      <div class="map-item-text"><span class="map-item-name">Forno Cappa</span><span class="map-item-place">Visso</span></div>
+      <span class="map-item-arrow">↗</span>
+    </a>
+    <a class="map-item" href="https://www.google.com/maps/search/?api=1&query=Il+Pastorello+Cupi+Visso" target="_blank" rel="noopener">
+      <div class="map-item-text"><span class="map-item-name">Il Pastorello</span><span class="map-item-place">Cupi</span></div>
+      <span class="map-item-arrow">↗</span>
+    </a>
+    <a class="map-item" href="https://www.google.com/maps/search/?api=1&query=Pettacci+Salumi" target="_blank" rel="noopener">
+      <div class="map-item-text"><span class="map-item-name">Pettacci Salumi</span></div>
+      <span class="map-item-arrow">↗</span>
+    </a>
+    <a class="map-item" href="https://www.google.com/maps/search/?api=1&query=Ortigiana+Ussita" target="_blank" rel="noopener">
+      <div class="map-item-text"><span class="map-item-name">Ortigiana</span><span class="map-item-place">Ussita</span></div>
+      <span class="map-item-arrow">↗</span>
+    </a>
+    <a class="map-item" href="https://www.google.com/maps/search/?api=1&query=Azienda+Agricola+Sapori+dei+Sibillini+Luca+Testa+Visso" target="_blank" rel="noopener">
+      <div class="map-item-text"><span class="map-item-name" data-it="Sapori dei Sibillini di Luca Testa" data-en="Sapori dei Sibillini di Luca Testa">Sapori dei Sibillini di Luca Testa</span><span class="map-item-place">Visso</span></div>
+      <span class="map-item-arrow">↗</span>
+    </a>
+
+    <!-- PRODUTTORI E TAVOLOZZA -->
+    <div class="map-cat-title" data-it="Produttori e dispensa" data-en="Producers and pantry">Produttori e dispensa</div>
+
+    <a class="map-item" href="https://www.google.com/maps/search/?api=1&query=Troticoltura+Eredi+Cherubini+Visso" target="_blank" rel="noopener">
+      <div class="map-item-text"><span class="map-item-name">Troticoltura Eredi Cherubini</span><span class="map-item-place">Visso</span></div>
+      <span class="map-item-arrow">↗</span>
+    </a>
+    <a class="map-item" href="https://www.google.com/maps/search/?api=1&query=Mariano+Cappa+Agri-fish+Visso" target="_blank" rel="noopener">
+      <div class="map-item-text"><span class="map-item-name">Mariano Cappa</span><span class="map-item-place">Visso</span></div>
+      <span class="map-item-arrow">↗</span>
+    </a>
+    <a class="map-item" href="https://www.google.com/maps/search/?api=1&query=Acqua+Nerea+Castelsantangelo+sul+Nera" target="_blank" rel="noopener">
+      <div class="map-item-text"><span class="map-item-name">Acqua Nerea</span><span class="map-item-place">Castelsantangelo sul Nera</span></div>
+      <span class="map-item-arrow">↗</span>
+    </a>
+    <a class="map-item" href="https://www.google.com/maps/search/?api=1&query=La+Sopravissana+dei+Sibillini+Ussita" target="_blank" rel="noopener">
+      <div class="map-item-text"><span class="map-item-name">La Sopravissana dei Sibillini</span><span class="map-item-place">Ussita</span></div>
+      <span class="map-item-arrow">↗</span>
+    </a>
+    <a class="map-item" href="https://www.google.com/maps/search/?api=1&query=L%27Incanto+degli+Appennini+Ussita" target="_blank" rel="noopener">
+      <div class="map-item-text"><span class="map-item-name">L'Incanto degli Appennini</span><span class="map-item-place">Ussita</span></div>
+      <span class="map-item-arrow">↗</span>
+    </a>
+
+    <!-- OSPITALITÀ -->
+    <div class="map-cat-title" data-it="Ospitalità" data-en="Where to stay">Ospitalità</div>
+
+    <a class="map-item" href="https://www.google.com/maps/search/?api=1&query=Villacolle+Visso" target="_blank" rel="noopener">
+      <div class="map-item-text"><span class="map-item-name">Villacolle</span><span class="map-item-place">Visso</span></div>
+      <span class="map-item-arrow">↗</span>
+    </a>
+    <a class="map-item" href="https://www.google.com/maps/search/?api=1&query=B%26B+Il+Borgo+Visso" target="_blank" rel="noopener">
+      <div class="map-item-text"><span class="map-item-name">B&B Il Borgo</span><span class="map-item-place">Visso</span></div>
+      <span class="map-item-arrow">↗</span>
+    </a>
+    <a class="map-item" href="https://www.google.com/maps/search/?api=1&query=Sibilla+Ospitalita+Visso" target="_blank" rel="noopener">
+      <div class="map-item-text"><span class="map-item-name">Sibilla Ospitalità</span><span class="map-item-place">Visso</span></div>
+      <span class="map-item-arrow">↗</span>
+    </a>
+
+  </section>
+
+  <!-- BOTTOM NAV -->
+  <nav class="bottom-nav">
+    <a href="../index.html" class="nav-item">
+      <span class="nav-icon">⌂</span>
+      <span data-it="Home" data-en="Home">Home</span>
+    </a>
+    <a href="programma.html" class="nav-item">
+      <span class="nav-icon">📅</span>
+      <span data-it="Programma" data-en="Schedule">Programma</span>
+    </a>
+    <a href="gusto.html" class="nav-item">
+      <span class="nav-icon">🍽</span>
+      <span data-it="Gusto" data-en="Food">Gusto</span>
+    </a>
+    <a href="mappa.html" class="nav-item active">
+      <span class="nav-icon">📍</span>
+      <span data-it="Mappa" data-en="Map">Mappa</span>
+    </a>
+    <a href="tavolozza.html" class="nav-item">
+      <span class="nav-icon">🎨</span>
+      <span data-it="Tavolozza" data-en="Flavours">Tavolozza</span>
+    </a>
+  </nav>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

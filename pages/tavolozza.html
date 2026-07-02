@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#5A1F1B">
+  <title>Tavolozza — Le Guaite del Gusto</title>
+  <meta name="description" content="Legumi, miele, tartufo, trota, salumi e formaggi: la tavolozza dei sapori vissani da scoprire a Le Guaite del Gusto.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:title" content="La tavolozza — Le Guaite del Gusto">
+  <meta property="og:description" content="Legumi, miele, tartufo, trota, salumi e formaggi: la tavolozza dei sapori vissani da scoprire a Le Guaite del Gusto.">
+  <meta property="og:image" content="../images/hero.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+  <link rel="manifest" href="../manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <header class="topbar">
+    <div class="lang-switch">
+      <span class="active" onclick="setLang('it')">IT</span>
+      <span onclick="setLang('en')">EN</span>
+    </div>
+    <div class="logo-block">
+      <img src="../images/logo-visso.png" alt="Comune di Visso" class="logo-crest">
+      <span class="logo-text serif">La perla dei Sibillini</span>
+    </div>
+  </header>
+
+  <!-- INSTALL BANNER -->
+  <div class="install-banner" id="installBanner">
+    <div class="install-icon">⬇</div>
+    <div class="install-text">
+      <strong data-it="Visso sempre in tasca" data-en="Visso always with you">Visso sempre in tasca</strong>
+      <span data-it="Salva l'app sulla Home" data-en="Save the app to your Home">Salva l'app sulla Home</span>
+    </div>
+    <button onclick="installApp()" data-it="Installa" data-en="Install">Installa</button>
+  </div>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <a href="../index.html" class="back-link" data-it="← Home" data-en="← Home">← Home</a>
+    <h1 class="serif"><span data-it="La" data-en="The">La</span> <em data-it="tavolozza" data-en="palette">tavolozza</em></h1>
+    <p class="section-sub" data-it="I sapori vissani, tra terra, acqua, pascoli e boschi" data-en="The flavours of Visso, between land, water, pastures and woods">I sapori vissani, tra terra, acqua, pascoli e boschi</p>
+  </div>
+
+  <section class="section" style="padding-top: 8px;">
+
+    <p class="subsection-intro" data-it="Legumi, miele, tartufo, trota, salumi e formaggi compongono la Tavolozza dei sapori vissani: un percorso di degustazione che racconta Visso attraverso la terra, l'acqua, i pascoli, i boschi e le antiche sapienze produttive della montagna." data-en="Legumes, honey, truffle, trout, cured meats and cheeses make up the Palette of Visso flavours: a tasting journey that tells the story of Visso through its land, water, pastures, woods and the mountain's ancient production wisdom.">Legumi, miele, tartufo, trota, salumi e formaggi compongono la Tavolozza dei sapori vissani: un percorso di degustazione che racconta Visso attraverso la terra, l'acqua, i pascoli, i boschi e le antiche sapienze produttive della montagna.</p>
+
+    <div class="callout" data-it="Domenica pomeriggio la Tavolozza sarà protagonista de «Le Guaite del Gusto, lo spettacolo dei Sibillini». Prenotati su tipicita.it per ricevere la degustazione esclusiva della Tavolozza di Visso." data-en="On Sunday afternoon the Palette takes centre stage at «Le Guaite del Gusto, lo spettacolo dei Sibillini». Book on tipicita.it to receive the exclusive tasting of Visso's Palette.">Domenica pomeriggio la Tavolozza sarà protagonista de «Le Guaite del Gusto, lo spettacolo dei Sibillini». Prenotati su tipicita.it per ricevere la degustazione esclusiva della Tavolozza di Visso.</div>
+
+    <div class="tav-detail-card">
+      <span class="tav-detail-icon">🌿</span>
+      <div>
+        <div class="tav-detail-tag" data-it="La terra" data-en="The land">La terra</div>
+        <div class="tav-detail-title" data-it="Legumi" data-en="Legumes">Legumi</div>
+        <div class="tav-detail-text" data-it="I gioielli dei Sibillini: lenticchie, roveja e cicerchia, piccoli tesori della cucina di montagna." data-en="The jewels of the Sibillini: lentils, roveja and cicerchia, small treasures of mountain cuisine.">I gioielli dei Sibillini: lenticchie, roveja e cicerchia, piccoli tesori della cucina di montagna.</div>
+      </div>
+    </div>
+
+    <div class="tav-detail-card">
+      <span class="tav-detail-icon">🍯</span>
+      <div>
+        <div class="tav-detail-tag" data-it="I fiori" data-en="The flowers">I fiori</div>
+        <div class="tav-detail-title" data-it="Miele" data-en="Honey">Miele</div>
+        <div class="tav-detail-text" data-it="La dolcezza naturale dei pascoli e dei boschi, racchiusa nei profumi dei Sibillini." data-en="The natural sweetness of pastures and woods, held in the scents of the Sibillini.">La dolcezza naturale dei pascoli e dei boschi, racchiusa nei profumi dei Sibillini.</div>
+      </div>
+    </div>
+
+    <div class="tav-detail-card">
+      <span class="tav-detail-icon">🍄</span>
+      <div>
+        <div class="tav-detail-tag" data-it="Il bosco" data-en="The woods">Il bosco</div>
+        <div class="tav-detail-title" data-it="Tartufo" data-en="Truffle">Tartufo</div>
+        <div class="tav-detail-text" data-it="Il profumo prezioso e nascosto dell'Appennino, capace di accendere ogni sapore." data-en="The precious, hidden scent of the Apennines, able to bring every flavour to life.">Il profumo prezioso e nascosto dell'Appennino, capace di accendere ogni sapore.</div>
+      </div>
+    </div>
+
+    <div class="tav-detail-card">
+      <span class="tav-detail-icon">🐟</span>
+      <div>
+        <div class="tav-detail-tag" data-it="L'acqua" data-en="The water">L'acqua</div>
+        <div class="tav-detail-title" data-it="Trota" data-en="Trout">Trota</div>
+        <div class="tav-detail-text" data-it="La freschezza viva di sorgenti e torrenti, anima limpida della montagna vissana." data-en="The living freshness of springs and streams, the clear soul of the Visso mountains.">La freschezza viva di sorgenti e torrenti, anima limpida della montagna vissana.</div>
+      </div>
+    </div>
+
+    <div class="tav-detail-card">
+      <span class="tav-detail-icon">🥩</span>
+      <div>
+        <div class="tav-detail-tag" data-it="La norcineria" data-en="The norcineria">La norcineria</div>
+        <div class="tav-detail-title" data-it="Salumi" data-en="Cured meats">Salumi</div>
+        <div class="tav-detail-text" data-it="Saperi antichi, stagionature lente e sapori decisi della tradizione appenninica." data-en="Ancient know-how, slow ageing and bold flavours of the Apennine tradition.">Saperi antichi, stagionature lente e sapori decisi della tradizione appenninica.</div>
+      </div>
+    </div>
+
+    <div class="tav-detail-card">
+      <span class="tav-detail-icon">🧀</span>
+      <div>
+        <div class="tav-detail-tag" data-it="I pascoli" data-en="The pastures">I pascoli</div>
+        <div class="tav-detail-title" data-it="Formaggi" data-en="Cheeses">Formaggi</div>
+        <div class="tav-detail-text" data-it="La pecora Sopravissana e il gusto delle erbe di montagna custodito nei formaggi." data-en="The Sopravissana sheep and the taste of mountain herbs kept in the cheeses.">La pecora Sopravissana e il gusto delle erbe di montagna custodito nei formaggi.</div>
+      </div>
+    </div>
+
+    <a class="see-all" href="gusto.html" data-it="Scopri i luoghi del gusto →" data-en="Discover the flavour spots →">Scopri i luoghi del gusto →</a>
+
+  </section>
+
+  <!-- BOTTOM NAV -->
+  <nav class="bottom-nav">
+    <a href="../index.html" class="nav-item">
+      <span class="nav-icon">⌂</span>
+      <span data-it="Home" data-en="Home">Home</span>
+    </a>
+    <a href="programma.html" class="nav-item">
+      <span class="nav-icon">📅</span>
+      <span data-it="Programma" data-en="Schedule">Programma</span>
+    </a>
+    <a href="gusto.html" class="nav-item">
+      <span class="nav-icon">🍽</span>
+      <span data-it="Gusto" data-en="Food">Gusto</span>
+    </a>
+    <a href="mappa.html" class="nav-item">
+      <span class="nav-icon">📍</span>
+      <span data-it="Mappa" data-en="Map">Mappa</span>
+    </a>
+    <a href="tavolozza.html" class="nav-item active">
+      <span class="nav-icon">🎨</span>
+      <span data-it="Tavolozza" data-en="Flavours">Tavolozza</span>
+    </a>
+  </nav>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
