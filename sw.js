@@ -1,4 +1,4 @@
-const CACHE_NAME = 'guaite-del-gusto-v6';
+const CACHE_NAME = 'guaite-del-gusto-v7';
 
 const PRECACHE_URLS = [
   'index.html',
@@ -16,7 +16,8 @@ const PRECACHE_URLS = [
   'images/grand-tour-badge.png',
   'images/favicon.png',
   'images/icon-192.png',
-  'images/icon-512.png'
+  'images/icon-512.png',
+  'images/qr-code.png'
 ];
 
 self.addEventListener('install', (event) => {
