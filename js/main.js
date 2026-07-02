@@ -69,3 +69,13 @@ function installApp() {
     );
   }
 }
+
+// ── CONTATTACI (WhatsApp Tipicità) ──
+function contactWhatsApp() {
+  const messages = {
+    it: 'Ciao Tipicità, vorrei avere maggiori informazioni su "La perla dei Sibillini", puoi aiutarmi?',
+    en: "Hi Tipicità, I'd like to know more about Visso, can you help me?"
+  };
+  const text = encodeURIComponent(messages[currentLang] || messages.it);
+  window.open('https://wa.me/390737685623?text=' + text, '_blank');
+}

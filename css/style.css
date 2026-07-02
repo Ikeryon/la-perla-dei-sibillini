@@ -431,6 +431,32 @@ body {
 /* spazio sotto per il nav fisso */
 body { padding-bottom: 80px; }
 
+/* ── CONTATTACI (FAB) ── */
+.contact-fab {
+  position: fixed;
+  bottom: 92px;
+  right: 18px;
+  z-index: 95;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #25D366;
+  color: #fff;
+  border: none;
+  padding: 13px 20px;
+  border-radius: 30px;
+  font-family: 'Jost', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.28);
+  cursor: pointer;
+}
+
+.contact-fab span {
+  color: #fff;
+  opacity: 1;
+}
+
 /* ── PAGE HEADER (subpages) ── */
 .page-header {
   padding: 22px 22px 6px 22px;
