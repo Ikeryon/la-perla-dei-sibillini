@@ -796,9 +796,9 @@ a.book-btn span {
 
 .dl-hero-photo img {
   width: 100%;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
-  object-position: 45% 90%;
+  object-position: center;
   border-radius: 100px 0 0 100px;
   box-shadow: -14px 20px 44px rgba(90,31,27,0.22);
   display: block;

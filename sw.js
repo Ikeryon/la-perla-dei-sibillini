@@ -1,4 +1,4 @@
-const CACHE_NAME = 'guaite-del-gusto-v7';
+const CACHE_NAME = 'guaite-del-gusto-v8';
 
 const PRECACHE_URLS = [
   'index.html',
@@ -10,6 +10,7 @@ const PRECACHE_URLS = [
   'pages/tavolozza.html',
   'pages/mappa.html',
   'images/hero.png',
+  'images/hero-desktop.png',
   'images/logo-visso.png',
   'images/logotype.png',
   'images/g-swirl.png',
