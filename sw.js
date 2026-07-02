@@ -1,10 +1,17 @@
-const CACHE_NAME = 'guaite-del-gusto-v8';
+const CACHE_NAME = 'guaite-del-gusto-v9';
 
 const PRECACHE_URLS = [
   'index.html',
   'css/style.css',
+  'css/fonts.css',
   'js/main.js',
   'manifest.json',
+  'fonts/fraunces-italic-500-latin-ext.woff2',
+  'fonts/fraunces-italic-500-latin.woff2',
+  'fonts/fraunces-normal-latin-ext.woff2',
+  'fonts/fraunces-normal-latin.woff2',
+  'fonts/jost-latin-ext.woff2',
+  'fonts/jost-latin.woff2',
   'pages/programma.html',
   'pages/gusto.html',
   'pages/tavolozza.html',
