@@ -70,6 +70,11 @@ function installApp() {
   }
 }
 
+// ── PROPOSTA SPECIALE (accordion) ──
+function toggleProposal(btn) {
+  btn.nextElementSibling.classList.toggle('open');
+}
+
 // ── CONTATTACI (WhatsApp Tipicità) ──
 function contactWhatsApp() {
   const messages = {
