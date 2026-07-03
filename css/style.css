@@ -944,3 +944,23 @@ a.book-btn span {
 }
 
 .venue-proposal p:first-child { margin-top: 0; }
+
+/* ── BOTTONE DISATTIVATO (in attesa di link) ── */
+.book-btn.disabled {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  background: var(--cream-deep);
+  color: var(--ink);
+  opacity: 0.55;
+  border: 1.5px dashed var(--blush);
+  padding: 8px 14px;
+  border-radius: 20px;
+  cursor: not-allowed;
+  font-family: 'Jost', sans-serif;
+}
+
+.book-btn.disabled span { color: var(--ink); opacity: 1; }
