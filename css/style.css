@@ -327,7 +327,15 @@ body {
   gap: 5px;
 }
 
-.tav-icon { font-size: 20px; }
+.tav-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto;
+  display: block;
+  border: 2px solid rgba(255,255,255,0.3);
+}
 
 .tav-link {
   display: block;
@@ -602,10 +610,17 @@ body { padding-bottom: 80px; }
   margin-top: 12px;
   border: 1px solid var(--cream-deep);
   box-shadow: 0 4px 16px rgba(90,31,27,0.05);
-  align-items: flex-start;
+  align-items: center;
 }
 
-.tav-detail-icon { font-size: 26px; flex-shrink: 0; }
+.tav-detail-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(90,31,27,0.15);
+}
 
 .tav-detail-title {
   font-size: 15px;

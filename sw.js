@@ -1,4 +1,4 @@
-const CACHE_NAME = 'guaite-del-gusto-v18';
+const CACHE_NAME = 'guaite-del-gusto-v19';
 
 const PRECACHE_URLS = [
   'index.html',
@@ -25,7 +25,13 @@ const PRECACHE_URLS = [
   'images/favicon.png',
   'images/icon-192.png',
   'images/icon-512.png',
-  'images/qr-code.png'
+  'images/qr-code.png',
+  'images/legumi.jpg',
+  'images/miele.jpg',
+  'images/tartufo.jpg',
+  'images/trota.jpg',
+  'images/salumi.jpg',
+  'images/formaggio.jpg'
 ];
 
 self.addEventListener('install', (event) => {
