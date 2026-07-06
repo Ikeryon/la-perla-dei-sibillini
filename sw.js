@@ -1,4 +1,4 @@
-const CACHE_NAME = 'guaite-del-gusto-v21';
+const CACHE_NAME = 'guaite-del-gusto-v22';
 
 const PRECACHE_URLS = [
   'index.html',
@@ -58,16 +58,19 @@ self.addEventListener('fetch', (event) => {
   // sempre alla rete/browser: niente intercettazioni che possano romperle.
   if (req.mode === 'navigate') return;
 
+  // Rete prima di tutto, cache solo come riserva se sei offline.
+  // Così ogni asset (CSS, JS, immagini) resta sempre aggiornato quando
+  // c'è connessione, invece di restare bloccato alla prima versione
+  // scaricata finché non cambia manualmente la versione della cache.
   event.respondWith(
-    caches.match(req).then((cached) => {
-      if (cached) return cached;
-      return fetch(req).then((response) => {
+    fetch(req)
+      .then((response) => {
         if (response.ok) {
           const clone = response.clone();
           caches.open(CACHE_NAME).then((cache) => cache.put(req, clone));
         }
         return response;
-      });
-    })
+      })
+      .catch(() => caches.match(req))
   );
 });
