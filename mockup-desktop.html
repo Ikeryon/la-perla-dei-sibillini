@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mockup home desktop — La Perla dei Sibillini</title>
+<link rel="stylesheet" href="css/fonts.css">
+<style>
+:root{
+  --cream:#FBF6F1; --cream-deep:#F4EBE3; --blush:#E3CFC8; --blush-soft:#EEDFD9;
+  --maroon:#5A1F1B; --maroon-soft:#7A332B; --ink:#3A2A26; --gold:#9a6b1f;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:'Jost',sans-serif}
+.serif{font-family:'Fraunces',serif}
+.wrap{max-width:1200px;margin:0 auto;padding:0 40px}
+
+/* ── MASTHEAD ── */
+.mast{padding:26px 0 14px;text-align:center;position:relative}
+.mast-lang{position:absolute;right:0;top:30px;font-size:12px;letter-spacing:.06em}
+.mast-lang b{background:var(--maroon);color:var(--cream);padding:4px 9px;border-radius:20px}
+.mast-lang span{opacity:.5;padding:4px 6px}
+.mast-crest{width:44px;display:block;margin:0 auto 8px}
+.mast-name{font-size:40px;color:var(--maroon);font-weight:700;letter-spacing:-.01em;line-height:1}
+.mast-kicker{margin-top:9px;font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;opacity:.6}
+.mast-nav{margin-top:16px;border-top:1px solid var(--blush);border-bottom:1px solid var(--blush);
+  display:flex;justify-content:center;gap:34px;padding:11px 0;font-size:13.5px;font-weight:600;letter-spacing:.03em}
+.mast-nav a{color:var(--ink);text-decoration:none;opacity:.75}
+.mast-nav a.on{color:var(--maroon);opacity:1}
+
+/* ── GRIGLIA NYT ── */
+.grid{display:grid;grid-template-columns:1fr 2.15fr 1fr;gap:0;margin-top:26px}
+.col{padding:0 26px}
+.col--l{padding-left:0}
+.col--c{border-left:1px solid var(--blush);border-right:1px solid var(--blush)}
+.col--r{padding-right:0}
+body.no-events .grid{grid-template-columns:2.4fr 1fr}
+body.no-events .col--l{display:none}
+body.no-events .col--c{border-left:0;padding-left:0}
+
+.rubrica{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--maroon);
+  font-weight:700;padding-bottom:8px;border-bottom:2px solid var(--maroon);margin-bottom:16px}
+
+/* ── LEAD NEWS ── */
+.lead-img{width:100%;height:270px;object-fit:cover;border-radius:4px;display:block;margin-bottom:14px}
+.lead-date{font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);font-weight:700}
+.lead-title{font-size:38px;line-height:1.08;color:var(--maroon);font-weight:700;margin:8px 0 10px;letter-spacing:-.015em}
+.lead-stand{font-size:16.5px;line-height:1.6;opacity:.85;margin:0}
+.lead-more{display:inline-block;margin-top:12px;font-size:14px;font-weight:700;color:var(--maroon);text-decoration:none}
+
+.sep{border:0;border-top:1px solid var(--blush);margin:24px 0}
+
+/* ── ALTRE NEWS ── */
+.more-news{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.mn-date{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);font-weight:700}
+.mn-title{font-size:18px;line-height:1.25;color:var(--maroon);font-weight:700;margin:5px 0 6px}
+.mn-text{font-size:13.5px;line-height:1.5;opacity:.75;margin:0}
+.mn-thumb{width:100%;height:96px;object-fit:cover;border-radius:3px;margin-bottom:8px;display:block}
+
+.archivio{margin-top:24px;padding-top:14px;border-top:1px solid var(--blush);
+  display:flex;justify-content:space-between;align-items:baseline;font-size:13px}
+.archivio a{color:var(--maroon);font-weight:700;text-decoration:none}
+.archivio .anni{opacity:.55}
+.archivio .anni b{font-weight:600;color:var(--ink);margin-left:8px}
+
+/* ── COLONNE LATERALI ── */
+.app-item{padding:13px 0;border-bottom:1px solid var(--blush-soft)}
+.app-when{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);font-weight:700}
+.app-title{font-size:15.5px;line-height:1.25;color:var(--maroon);font-weight:700;margin:4px 0 3px}
+.app-where{font-size:12px;opacity:.65}
+.app-sold{display:inline-block;margin-top:6px;background:#c62828;color:#fff;font-size:10px;font-weight:700;
+  letter-spacing:.08em;padding:3px 8px;border-radius:20px}
+
+.poi-item{padding:13px 0;border-bottom:1px solid var(--blush-soft)}
+.poi-name{font-size:15px;line-height:1.25;color:var(--maroon);font-weight:700}
+.poi-meta{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-top:3px}
+.poi-desc{font-size:12.5px;line-height:1.5;opacity:.7;margin:5px 0 0}
+.side-cta{display:block;margin-top:14px;text-align:center;border:1.5px solid var(--blush);
+  border-radius:22px;padding:9px;font-size:13px;font-weight:700;color:var(--maroon);text-decoration:none}
+
+/* ── TAVOLOZZA ── */
+.tav{margin-top:44px;padding-top:22px;border-top:3px double var(--blush)}
+.tav-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:16px}
+.tav-h{font-size:26px;color:var(--maroon);font-weight:700}
+.tav-sub{font-size:13px;opacity:.6}
+.tav-row{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+.tav-card{text-align:center}
+.tav-card img{width:74px;height:74px;object-fit:cover;border-radius:50%;display:block;margin:0 auto 9px}
+.tav-tag{font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);font-weight:700}
+.tav-name{font-size:16px;color:var(--maroon);font-weight:700;margin:2px 0 4px}
+.tav-txt{font-size:11.5px;line-height:1.45;opacity:.68;margin:0}
+
+/* ── NEWSLETTER + FOOTER ── */
+.nl{margin-top:40px;background:var(--maroon);color:var(--cream);border-radius:14px;
+  padding:22px 28px;display:flex;align-items:center;gap:22px}
+.nl-t{font-size:19px;font-weight:700}
+.nl-s{font-size:13px;opacity:.8;margin-top:2px}
+.nl-btn{margin-left:auto;background:var(--cream);color:var(--maroon);border:0;border-radius:22px;
+  padding:11px 24px;font:inherit;font-size:14px;font-weight:700;cursor:pointer}
+.foot{margin:26px 0 40px;text-align:center;font-size:12px;opacity:.55}
+
+/* pannello di prova del mockup */
+.demo{position:fixed;left:16px;bottom:16px;background:#fff;border:1px solid var(--blush);
+  border-radius:10px;padding:10px 14px;font-size:12px;box-shadow:0 4px 16px rgba(0,0,0,.12);z-index:9}
+.demo button{font:inherit;font-size:12px;margin-left:8px;padding:5px 10px;border-radius:14px;
+  border:1px solid var(--maroon);background:#fff;color:var(--maroon);cursor:pointer}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <!-- MASTHEAD -->
+  <header class="mast">
+    <div class="mast-lang"><b>IT</b><span>EN</span></div>
+    <img class="mast-crest" src="images/logo-visso.png" alt="">
+    <div class="mast-name serif">La perla dei Sibillini</div>
+    <div class="mast-kicker">Visso · Monti Sibillini · dal territorio</div>
+    <nav class="mast-nav">
+      <a href="#" class="on">Home</a>
+      <a href="#">Programma</a>
+      <a href="#">Gusto</a>
+      <a href="#">Mappa</a>
+      <a href="#">News</a>
+    </nav>
+  </header>
+
+  <div class="grid">
+
+    <!-- ══ SINISTRA: PROSSIMI APPUNTAMENTI ══ -->
+    <div class="col col--l">
+      <div class="rubrica">Prossimi appuntamenti</div>
+
+      <div class="app-item">
+        <div class="app-when">Sab 18 luglio · 18.30</div>
+        <div class="app-title serif">Ritorno in Piazza — Aperitivo</div>
+        <div class="app-where">Piazza Martiri Vissani</div>
+      </div>
+      <div class="app-item">
+        <div class="app-when">Sab 18 luglio · 17.30</div>
+        <div class="app-title serif">Esplora Visso</div>
+        <div class="app-where">Ritrovo Porta Santa Maria</div>
+        <span class="app-sold">SOLD OUT</span>
+      </div>
+      <div class="app-item">
+        <div class="app-when">Dom 19 luglio · 10.00</div>
+        <div class="app-title serif">Mercatino di montagna</div>
+        <div class="app-where">Piazza Maria Cappa</div>
+      </div>
+      <div class="app-item" style="border-bottom:0">
+        <div class="app-when">Dom 19 luglio · 17.30</div>
+        <div class="app-title serif">Lo spettacolo dei Sibillini</div>
+        <div class="app-where">Piazza Maria Cappa</div>
+      </div>
+
+      <a class="side-cta" href="#">Tutto il programma →</a>
+    </div>
+
+    <!-- ══ CENTRO: NEWS ══ -->
+    <div class="col col--c">
+      <div class="rubrica">Dal territorio</div>
+
+      <article>
+        <img class="lead-img" src="images/hero.png" alt="">
+        <div class="lead-date">16 luglio 2026 · Eventi</div>
+        <h1 class="lead-title serif">Ritorno in piazza</h1>
+        <p class="lead-stand">Per una sera Piazza Martiri Vissani torna a vivere: un aperitivo a quattro mani
+          tra Osteria Fario e La Filanda, sei proposte di finger food dei Sibillini e un calice di Verdicchio.
+          A quasi dieci anni dal sisma che l'aveva svuotata.</p>
+        <a class="lead-more" href="#">Leggi l'articolo →</a>
+      </article>
+
+      <hr class="sep">
+
+      <div class="more-news">
+        <article>
+          <img class="mn-thumb" src="images/tartufo.jpg" alt="">
+          <div class="mn-date">16 luglio 2026</div>
+          <h2 class="mn-title serif">Le Guaite del Gusto: full immersion nei Sibillini</h2>
+          <p class="mn-text">Un intero fine settimana per vivere Visso e il territorio, tra sentieri e sapori.</p>
+        </article>
+        <article>
+          <img class="mn-thumb" src="images/trota.jpg" alt="">
+          <div class="mn-date">14 luglio 2026</div>
+          <h2 class="mn-title serif">Visso è tappa del Grand Tour delle Marche</h2>
+          <p class="mn-text">Dal 17 al 19 luglio degustazioni, esperienze e performance nel cuore del Parco.</p>
+        </article>
+      </div>
+
+      <div class="archivio">
+        <a href="#">Archivio completo delle news →</a>
+        <span class="anni">Sfoglia per anno <b>2026</b> <b>2025</b></span>
+      </div>
+    </div>
+
+    <!-- ══ DESTRA: I LUOGHI DEL GUSTO ══ -->
+    <div class="col col--r">
+      <div class="rubrica">I luoghi del gusto</div>
+
+      <div class="poi-item">
+        <div class="poi-name serif">Osteria Fario</div>
+        <div class="poi-meta">Punto del gusto · Visso</div>
+        <p class="poi-desc">Abbinamenti contemporanei per una cucina che valorizza i profumi di pascoli,
+          monti e fiumi.</p>
+      </div>
+      <div class="poi-item">
+        <div class="poi-name serif">Il Pastorello</div>
+        <div class="poi-meta">Bottega · Cupi</div>
+        <p class="poi-desc">Formaggi di montagna e stagionature lente, dove la Sopravissana racconta il pascolo.</p>
+      </div>
+      <div class="poi-item" style="border-bottom:0">
+        <div class="poi-name serif">Villacolle</div>
+        <div class="poi-meta">Ospitalità · Visso</div>
+        <p class="poi-desc">Una casa tra i monti per fermarsi una notte in più e vedere l'alba sui Sibillini.</p>
+      </div>
+
+      <a class="side-cta" href="#">Vedi tutti i 28 luoghi →</a>
+    </div>
+
+  </div>
+
+  <!-- TAVOLOZZA -->
+  <section class="tav">
+    <div class="tav-head">
+      <div class="tav-h serif">La tavolozza dei sapori</div>
+      <div class="tav-sub">Terra, acqua, pascoli e boschi · degustazione su prenotazione</div>
+    </div>
+    <div class="tav-row">
+      <div class="tav-card"><img src="images/legumi.jpg" alt=""><div class="tav-tag">La terra</div><div class="tav-name serif">Legumi</div><p class="tav-txt">Lenticchie, roveja e cicerchia.</p></div>
+      <div class="tav-card"><img src="images/miele.jpg" alt=""><div class="tav-tag">I fiori</div><div class="tav-name serif">Miele</div><p class="tav-txt">La dolcezza di pascoli e boschi.</p></div>
+      <div class="tav-card"><img src="images/tartufo.jpg" alt=""><div class="tav-tag">Il bosco</div><div class="tav-name serif">Tartufo</div><p class="tav-txt">Il profumo nascosto dell'Appennino.</p></div>
+      <div class="tav-card"><img src="images/trota.jpg" alt=""><div class="tav-tag">L'acqua</div><div class="tav-name serif">Trota</div><p class="tav-txt">Freschezza di sorgenti e torrenti.</p></div>
+      <div class="tav-card"><img src="images/salumi.jpg" alt=""><div class="tav-tag">La norcineria</div><div class="tav-name serif">Salumi</div><p class="tav-txt">Saperi antichi e sapori decisi.</p></div>
+      <div class="tav-card"><img src="images/formaggio.jpg" alt=""><div class="tav-tag">I pascoli</div><div class="tav-name serif">Formaggi</div><p class="tav-txt">La pecora Sopravissana.</p></div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <div class="nl">
+    <div>
+      <div class="nl-t serif">La newsletter di Tipicità</div>
+      <div class="nl-s">Notizie, eventi e sapori dal territorio, direttamente nella tua casella.</div>
+    </div>
+    <button class="nl-btn">Iscriviti</button>
+  </div>
+
+  <div class="foot">Privacy Policy · Newsletter · © Comune di Visso</div>
+</div>
+
+<div class="demo">
+  Prova il comportamento:
+  <button onclick="document.body.classList.toggle('no-events')">Nessun appuntamento in programma</button>
+</div>
+
+</body>
+</html>
